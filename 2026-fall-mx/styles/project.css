@@ -5,6 +5,12 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #ff6600;
 }
 
 .header {
@@ -17,9 +23,28 @@ body {
 
 .footer {
   margin-top: calc(2 * var(--5in-gap));
+  padding-block: var(--5in-gap);
+  background: linear-gradient(to bottom, #000, #000 5px, #444 5px, #000);
+  color: white;
+
+  a {
+    color: oklch(77.132% 0.14535 52.644);
+  }
+}
+
+body:has(> .footer) {
+  /* Helps the footer touch the bottom on short pages. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+*:has(+ .footer) {
+  margin-bottom: auto;
 }
 
 .center {
+  width: calc(100% - 2 * var(--5in-gap));
   max-width: 960px;
   margin-inline: auto;
 }
