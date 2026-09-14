@@ -1,0 +1,8 @@
+body{
+    background-color:light-dark(aqua,navy);
+color:light-dark(navy);
+}
+footer{
+    background-color:light-dark( black);
+    color:light-dark( white);
+}
