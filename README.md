@@ -4,7 +4,10 @@ This project is being created by 5in’s Mixed Grade Coding Class during the fal
 
 The website for this project is available at [https://5in-tw.github.io/2026-fall-mx/](https://5in-tw.github.io/2026-fall-mx/)
 
-## Software needed for this project
+<details>
+<summary>
+<h2>Software needed for this project</h2>
+</summary>
 
 ### VS Code
 
@@ -48,3 +51,5 @@ Your Git username and email address is how others will see you when looking at t
    ```sh
    git config --global user.email "mona@gmail.com"
    ```
+
+</details>
