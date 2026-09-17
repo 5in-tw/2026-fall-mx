@@ -55,7 +55,3 @@ body:has(> .footer) {
   align-items: center;
   gap: var(--5in-gap);
 }
-
-.backgroundcolor{
-  color: #444;
-} 
