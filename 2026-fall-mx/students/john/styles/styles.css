@@ -1,0 +1,15 @@
+body {
+  background-color: light-dark(aqua, darkblue);
+  color: light-dark(black, white);
+}
+
+footer {
+  background-color: light-dark(black, grey);
+  color: light-dark(white, black);
+}
+
+.center {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
