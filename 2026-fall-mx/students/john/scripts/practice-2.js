@@ -15,3 +15,7 @@ function testBody(event) {
   console.log("Listen to body!", event);
 }
 document.body.addEventListener("click", testBody);
+
+const cssSelector = '.footer';
+const meta = document.querySelector(cssSelector);
+console.log(meta);
