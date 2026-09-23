@@ -16,7 +16,7 @@
 /**
  * Styles to make the color scheme chooser easier to use.
  */
-.color-scheme-chooser {
+#color-chooser {
   --radius: 1.5em;
   --padding: 3px;
   --border-width: 2px;
