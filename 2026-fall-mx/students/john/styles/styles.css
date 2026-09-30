@@ -13,3 +13,16 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+#color-chooser {
+  border: 3px solid purple;
+
+  input {
+    display: none;
+  }
+
+  label:has( input:checked ) {
+    color: darkgreen;
+    background-color: lightsalmon;
+  }
+}
