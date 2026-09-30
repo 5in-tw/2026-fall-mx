@@ -10,7 +10,7 @@ function setColorScheme(colorScheme) {
 // setColorScheme("light");
 
 const chooser = document.getElementById("color-chooser");
-console.log(chooser);
+// console.log(chooser);
 
 function changeColors(event) {
   console.log(event);
