@@ -5,7 +5,7 @@ const key = 'color-sheme-chice'
 function setColorScheme(ColorScheme) {
     const metaTag = document.querySelector('meta');
     console.log(ColorScheme, metaTag);
-    metaTag.setAttribute("contant", ColorScheme)
+    metaTag.setAttribute("content", ColorScheme);
 }
 //setColorScheme("light");
 
