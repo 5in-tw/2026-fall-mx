@@ -45,6 +45,9 @@ label {
   color: rgb(109, 164, 170);
 }
 
+[type="text"]{
+    border: 6px double rgb(72, 247, 247);
+}
 
 
 
