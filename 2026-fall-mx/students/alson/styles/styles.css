@@ -1,10 +1,10 @@
 body {
-  background-color: light-dark(rgb(255, 182, 193),aqua );
+  background-color: light-dark(rgb(255, 182, 193), aqua);
   color: light-dark(black, white);
 }
 
 footer {
-  background-color: light-dark(plum,rgb(232, 139, 0));
+  background-color: light-dark(plum, purple);
   color: light-dark(white, black);
 }
 
@@ -12,4 +12,13 @@ footer {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#color-chooser {
+  border: 3px solid purple;
+
+  input {
+    display: none;
+    border: 5px solid red;
+  }
 }
