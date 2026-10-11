@@ -106,7 +106,9 @@ h1 {
   color: red;
   font-size: 2.5rem;
 
-  /* Style small elements that are inside an h1 element */
+  /* Style small elements that are inside an h1 element. For example:
+     &lt;h1&gt;Hello &lt;small&gt;Goodbye&lt;/small&gt;&lt;/h1&gt;
+  */
   small {
     font-size: 1rem;
   }
@@ -145,22 +147,22 @@ h1 { margin-block: 20px 10px; }</code></pre>
             the contents of their class attribute.
           </p>
           <p>Examples:</p>
-          <pre><code>/* All elements with class="spacious" */
-.spacious {
+          <pre><code>/* All elements with class="center" */
+.center {
   margin: 2em;
-}
+}<!-- 
 
-/* All &lt;li&gt; elements with class="spacious" */
-li.spacious {
+/* All &lt;li&gt; elements with class="center" */
+li.center {
   margin: 2em;
 }
 
 /* All &lt;li&gt; elements with a class list that
-   includes both "spacious" and "elegant".
-   For example, &lt;li class="elegant retro spacious"&gt; */
-li.spacious.elegant {
+   includes both "center" and "line".
+   For example, &lt;li class="line retro center"&gt; */
+li.center.line {
   margin: 2em;
-}</code></pre>
+}--></code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors"
@@ -170,12 +172,20 @@ li.spacious.elegant {
           </p>
         </dd>
 
-        <!-- <dt>Attribute selector <code>selector {}</code></dt>
+        <dt>Attribute selector <code>[attribute] {}</code> or <code>[attribute="value"] {}</code></dt>
         <dd>
-          <pre><code>/* Style &lt;a&gt; elements with a title attribute */
-a[title] {
+          <pre><code>/* Style all elements with a title attribute
+   for example: &lt;abbr title="Taiwan"&gt;tw&lt;/abbr&gt; */
+[title] {
   color: purple;
-}</code></pre>
+}
+
+/* Sytle all elements with a type attribute with a value of "text"
+   for example: &lt;input type="text"&gt; */
+[type="text"] {
+  border: 6px double purple;
+}
+</code></pre>
 
           <p>
             <a
@@ -184,7 +194,7 @@ a[title] {
               <span class="visually-hidden">for attribute selectors</span></a
             >
           </p>
-        </dd> -->
+        </dd>
 
         <dt>ID selector <code>#id {}</code></dt>
         <dd>
