@@ -2,9 +2,10 @@ console.log('working')
 
 const key = 'color-scheme-choice';
 
-function setColorScheme(coloeScheme){
+function setColorScheme(colorScheme){
     const metaTag = document.querySelector('meta');
-    console.log(coloeScheme, metaTag)
+    console.log(colorScheme, metaTag);
+    metaTag.setAttribute("content", colorScheme)
 }
 //setColorScheme("light");
 
