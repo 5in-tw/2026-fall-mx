@@ -34,3 +34,12 @@ label{
 
    
 }
+#color-chooser{
+
+    label:has( input:checked){
+        background:rgb(217, 213, 255);
+    }
+}
+[footer]{
+    border:6px double rgb(255, 221, 234);
+}
