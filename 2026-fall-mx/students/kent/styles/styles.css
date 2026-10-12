@@ -1,15 +1,28 @@
 body {
-    background-color: light-dark(aliceblue,darkblue);
-    color: light-dark(darkblue,aliceblue);
+    background-color: light-dark(aliceblue, darkblue);
+    color: light-dark(darkblue, aliceblue);
 }
 
 footer {
-     background-color: light-dark(white,black);
-     color: light-dark(black,white);
+    background-color: light-dark(white, black);
+    color: light-dark(black, white);
 }
 
-.center{
+.center {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#color-chooser {
+    border: 5px solid purple;
+
+
+    input {
+        display: none;
+        border: 5px solid red
+    }
+}
+[id]{
+    border:6px double purple;
 }
