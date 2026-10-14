@@ -1,7 +1,6 @@
 /*
  * Exercise 1. Select all h2 elements.
  */
-h2,
 fix_This_Selector {
   border: 2px dotted var(--border-color);
 }
@@ -9,7 +8,6 @@ fix_This_Selector {
 /*
  * Exercise 2. Select h2 elements inside the main element.
  */
-main h2,
 fix_This_Selector {
   margin-top: 0;
   border-top: none;
@@ -20,7 +18,6 @@ fix_This_Selector {
 /*
  * Exercise 3. Select the form with an id of snoopy.
  */
-#snoopy,
 fix_This_Selector {
   border: 3px solid var(--border-color);
   border-radius: 10px;
@@ -34,7 +31,6 @@ fix_This_Selector {
 /*
  * Exercise 4. Select elements with the class of form-buttons.
  */
-.form-buttons,
 fix_This_Selector {
   margin-top: 1em;
 }
@@ -42,7 +38,6 @@ fix_This_Selector {
 /*
  * Exercise 5. Select elements that have a type attribute equal to text.
  */
-[type="text"],
 fix_This_Selector {
   border: 2px solid var(--border-color);
   border-radius: 5px;
@@ -52,7 +47,6 @@ fix_This_Selector {
 /*
  * Bonus Exercise 6. Select elements with an attribute of title.
  */
-[title],
 fix_This_Selector {
   text-decoration: light-dark(red, pink) wavy underline;
 }
@@ -60,7 +54,6 @@ fix_This_Selector {
 /*
  * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
  */
-#snoopy span,
 fix_This_Selector {
   display: block;
   font-weight: bold;
@@ -71,7 +64,6 @@ fix_This_Selector {
 /*
  * Bonus Exercise 8. Select elements that have a type attribute equal to submit.
  */
-[type="submit"],
 fix_This_Selector {
   background-color: var(--border-color);
   color: light-dark(white, black);
@@ -82,7 +74,6 @@ fix_This_Selector {
 /*
  * Bonus Exercise 9. Select fieldset elements inside the main element.
  */
-main fieldset,
 fix_This_Selector {
   border: 2px solid var(--border-color);
   border-radius: 5px;
