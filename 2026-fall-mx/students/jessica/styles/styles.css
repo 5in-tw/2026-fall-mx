@@ -32,3 +32,6 @@ h1 {
     background: lightsalmon;
   }
 }
+[type="text"]{                                    
+  border: 6px double skyblue
+}
