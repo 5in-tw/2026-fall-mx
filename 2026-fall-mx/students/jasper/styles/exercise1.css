@@ -1,0 +1,104 @@
+/*
+ * Exercise 1. Select all h2 elements.
+ */
+h2 {
+  border: 2px dotted var(--border-color);
+}
+
+/*
+ * Exercise 2. Select h2 elements inside the main element.
+ */
+main h2 {
+  margin-top: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/*
+ * Exercise 3. Select the form with an id of snoopy.
+ */
+#snoopy {
+  border: 3px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url(https://5in-tw.github.io/2026-fall-mx/students/wilkins/images/snoopy.png);
+  background-repeat: repeat;
+}
+
+/*
+ * Exercise 4. Select elements with the class of form-buttons.
+ */
+.form-buttons {
+  margin-top: 1em;
+}
+
+/*
+ * Exercise 5. Select elements that have a type attribute equal to text.
+ */
+input[type="text"] {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+/*
+ * Bonus Exercise 6. Select elements with an attribute of title.
+ */
+[title] {
+  text-decoration: light-dark(red, pink) wavy underline;
+}
+
+/*
+ * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
+ */
+#snoopy span {
+  display: block;
+  font-weight: bold;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+/*
+ * Bonus Exercise 8. Select elements that have a type attribute equal to submit.
+ */
+[type="submit"] {
+  background-color: var(--border-color);
+  color: light-dark(white, black);
+  border: none;
+  border-radius: 5px;
+}
+
+/*
+ * Bonus Exercise 9. Select fieldset elements inside the main element.
+ */
+main fieldset {
+  border: 2px solid var(--border-color);
+  border-radius: 5px;
+}
+
+
+
+
+/* Changing this "custom property" will change any place where this property is used
+   inside a var() function (var is short for variable.) */
+body {
+  --border-color: light-dark(green, yellow);
+}
+
+/* Do not modify anything below this line */
+form * {
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+
+  legend {
+    font-weight: bold;
+  }
+}
+
+h1 {
+  margin: 0;
+}
