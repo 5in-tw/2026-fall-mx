@@ -77,7 +77,7 @@ main {
  * Bonus Exercise 9. Select fieldset elements inside the main element.
  */
 main {
-  fieild{
+  fieldset{
   border: 2px solid var(--border-color);
   border-radius: 5px;
 }
