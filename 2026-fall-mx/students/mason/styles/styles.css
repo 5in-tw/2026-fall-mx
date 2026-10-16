@@ -1,10 +1,32 @@
 body {
-    background-color: light-dark(aqua, hotpink);
-    color:blue;
+    background-color: light-dark(lightblue, hotpink);
+    color: black;
 }
 
 footer {
-    background-color:black;
-    color:aliceblue
+    background-color: gray;
+    color: black
 }
 
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-chooser {
+    border: 3px solid purple;
+
+    input {
+        display: none;
+        border: 5px solid red;
+    }
+
+    label:has(input:checked) {
+        background: lightsalmon;
+    }
+}
+
+[type="text"] {
+    border: 6px double purple;
+}
