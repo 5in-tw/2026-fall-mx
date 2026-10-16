@@ -55,10 +55,12 @@ main {
  * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
  */
 #snoopy {
+  span{
   display: block;
   font-weight: bold;
   margin-top: 6px;
   margin-bottom: 3px;
+}
 }
 
 /*
@@ -75,8 +77,10 @@ main {
  * Bonus Exercise 9. Select fieldset elements inside the main element.
  */
 main {
+  fieild{
   border: 2px solid var(--border-color);
   border-radius: 5px;
+}
 }
 
 
