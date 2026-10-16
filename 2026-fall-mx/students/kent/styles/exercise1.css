@@ -8,7 +8,7 @@ h2 {
 /*
  * Exercise 2. Select h2 elements inside the main element.
  */
-Main {
+main {
   margin-top: 0;
   border-top: none;
   border-left: none;
@@ -18,7 +18,7 @@ Main {
 /*
  * Exercise 3. Select the form with an id of snoopy.
  */
-fix_This_Selector {
+.id {
   border: 3px solid var(--border-color);
   border-radius: 10px;
   padding: 10px;
@@ -31,7 +31,7 @@ fix_This_Selector {
 /*
  * Exercise 4. Select elements with the class of form-buttons.
  */
-class. {
+.class {
   margin-top: 1em;
 }
 
@@ -47,7 +47,7 @@ fix_This_Selector {
 /*
  * Bonus Exercise 6. Select elements with an attribute of title.
  */
-fix_This_Selector {
+ {
   text-decoration: light-dark(red, pink) wavy underline;
 }
 
