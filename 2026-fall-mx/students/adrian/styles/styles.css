@@ -6,3 +6,40 @@ footer{
     background-color:light-dark( black);
     color:light-dark( white);
 }
+.center {
+    width: 960px;
+    margin-left:auto;
+      margin-right:auto;
+}
+#color-chooser{
+   border: 3px solid hwb(245 46% 0%);
+   input{
+    display: none;
+    border:10px solid rgb(129, 118, 255)
+}
+}
+
+
+.orbitron-uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+label{
+    border: 5px solid hwb(245 46% 0%);;
+    padding: 5px;
+        border-radius: 100em;
+
+   
+}
+#color-chooser{
+
+    label:has( input:checked){
+        background:rgb(217, 213, 255);
+    }
+}
+[footer]{
+    border:6px double rgb(255, 221, 234);
+}
