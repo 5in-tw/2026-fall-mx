@@ -54,7 +54,7 @@ fix_This_Selector {
 /*
  * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
  */
-fix_This_Selector {
+title {
   display: block;
   font-weight: bold;
   margin-top: 6px;
