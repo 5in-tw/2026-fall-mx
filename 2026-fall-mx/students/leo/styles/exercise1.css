@@ -47,7 +47,7 @@ text {
 /*
  * Bonus Exercise 6. Select elements with an attribute of title.
  */
-fix_This_Selector {
+title {
   text-decoration: light-dark(red, pink) wavy underline;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 /* Do not modify anything below this line */
-form * {
+form *{
   font-family: sans-serif;
   font-size: 1em;
   line-height: 1.5;
