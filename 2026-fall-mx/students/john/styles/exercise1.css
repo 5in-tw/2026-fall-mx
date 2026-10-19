@@ -1,24 +1,26 @@
 /*
  * Exercise 1. Select all h2 elements.
  */
-fix_This_Selector {
+h2 {
   border: 2px dotted var(--border-color);
 }
 
 /*
  * Exercise 2. Select h2 elements inside the main element.
  */
-fix_This_Selector {
-  margin-top: 0;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+main {
+  h2 {
+    margin-top: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 /*
  * Exercise 3. Select the form with an id of snoopy.
  */
-fix_This_Selector {
+#snoopy {
   border: 3px solid var(--border-color);
   border-radius: 10px;
   padding: 10px;
@@ -31,14 +33,14 @@ fix_This_Selector {
 /*
  * Exercise 4. Select elements with the class of form-buttons.
  */
-fix_This_Selector {
+.form-buttons {
   margin-top: 1em;
 }
 
 /*
  * Exercise 5. Select elements that have a type attribute equal to text.
  */
-fix_This_Selector {
+[type="text"] {
   border: 2px solid var(--border-color);
   border-radius: 5px;
   padding: 1px 5px;
@@ -47,24 +49,26 @@ fix_This_Selector {
 /*
  * Bonus Exercise 6. Select elements with an attribute of title.
  */
-fix_This_Selector {
+[title] {
   text-decoration: light-dark(red, pink) wavy underline;
 }
 
 /*
  * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
  */
-fix_This_Selector {
-  display: block;
-  font-weight: bold;
-  margin-top: 6px;
-  margin-bottom: 3px;
+#snoopy {
+  span {
+    display: block;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 3px;
+  }
 }
 
 /*
  * Bonus Exercise 8. Select elements that have a type attribute equal to submit.
  */
-fix_This_Selector {
+[type="submit"] {
   background-color: var(--border-color);
   color: light-dark(white, black);
   border: none;
@@ -74,9 +78,11 @@ fix_This_Selector {
 /*
  * Bonus Exercise 9. Select fieldset elements inside the main element.
  */
-fix_This_Selector {
-  border: 2px solid var(--border-color);
-  border-radius: 5px;
+main {
+  fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+  }
 }
 
 
