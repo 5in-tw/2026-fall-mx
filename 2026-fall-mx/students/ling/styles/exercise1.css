@@ -40,7 +40,7 @@ main {
 /*
  * Exercise 5. Select elements that have a type attribute equal to text.
  */
-[type=text] {
+[type="text"] {
     border: 2px solid var(--border-color);
     border-radius: 5px;
     padding: 1px 5px;
@@ -68,7 +68,7 @@ main {
 /*
  * Bonus Exercise 8. Select elements that have a type attribute equal to submit.
  */
-[type=submit] {
+[type="submit"] {
     background-color: var(--border-color);
     color: light-dark(white, black);
     border: none;
