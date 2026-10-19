@@ -8,6 +8,12 @@ footer {
   color: light-dark(white, black);
 }
 
+h1 {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .center {
   width: 960px;
   margin-left: auto;
@@ -23,6 +29,10 @@ footer {
 
   label:has( input:checked ) {
     color: darkgreen;
-    background-color: lightsalmon;
+    background: lightsalmon;
   }
+}
+
+[type="text"] {
+  border: 6px double purple; 
 }
