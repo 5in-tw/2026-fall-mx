@@ -1,4 +1,4 @@
-x8kauij6h7jbtg body {
+body {
     background-color:light-dark(pink, purple);
     color: light-dark(black, white)
 }
@@ -19,10 +19,8 @@ footer{
         border: 5px solid rgb(186, 63, 63);
     }
 }
-.montserrat-<uniquifier> {
+h1 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 [type] {

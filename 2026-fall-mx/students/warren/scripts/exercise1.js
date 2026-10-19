@@ -4,7 +4,8 @@ let alphabet = [
     "c",
     "d",
     "e",
-];=
+];
+
 console.log(alphabet);
 console.log(alphabet.length);
 const len = alphabet.length;
