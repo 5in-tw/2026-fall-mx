@@ -1,58 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title></title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" href="/2026-fall-mx/favicon.png" />
-    <meta name="color-scheme" content="light dark">
-  </head>
-  <body>
-    <header class="header">
-      <div class="center line">
-        <div class="big line">
-          <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
-          <b>5IN</b>
-        </div>
-        <menu class="line">
-          <a href="/2026-fall-mx/students/lalisa/">Home</a>
-        </menu>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" href="/2026-fall-mx/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light dark">
+</head>
+
+<body>
+  <header class="header">
+    <div class="center line">
+      <div class="big line">
+        <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
+        <b>5IN</b>
       </div>
-    </header>
-    <main class="center">
-      <h1>Homepage of Lisa</h1>
+      <menu class="line">
+        <a href="/2026-fall-mx/students/lalisa/">Home</a>
+      </menu>
+    </div>
+  </header>
+  <main class="center">
+    <h1 id="title">Homepage of 3mma</h1>
+    <img src="./styles/de2eb9b6a987c519f959cbb878d8b097.jpg" id="kaitoBD">
 
-      <fieldset>
-        <legend>Color scheme</legend>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="light" />
-          Light
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="color-scheme-choice"
-            value="light dark"
-            checked
-          />
-          Auto
-        </label>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="dark" />
-          Dark
-        </label>
-      </fieldset>
-    </main>
-    <footer class="footer">
-      <div class="center">
-        <p>Last updated: 2026 September 14</p>
-        <p>
-          Code:
-          <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
-        </p>
-      </div>
-    </footer>
+    <form id="my-form">
+      <lable>
+        Text:
+        <input type="color" name="test2 value=" blue">
+      </lable>
 
-    <script src="./scripts/color-scheme.js" type="module"></script>
+      <lable>
+        Text:
+        <input type="text" name="test2" value="Snoopy">
+      </lable>
 
-  </body>
+      <lable>
+        Text:
+        <input type="text" name="test3" value="Moodstock">
+      </lable>
+    </form>
+
+    <fieldset id="color-chooser">
+      <legend>Color scheme</legend>
+      <label>
+        <input type="radio" name="color-scheme-choice" value="light" />
+        Light
+      </label>
+      <label>
+        <input type="radio" name="color-scheme-choice" value="light dark" checked />
+        Auto
+      </label>
+      <label>
+        <input type="radio" name="color-scheme-choice" value="dark" />
+        Dark
+      </label>
+    </fieldset>
+    <button id="my-button">
+      test
+    </button>
+  </main>
+  <footer class="footer">
+    <div class="center">
+      <p>Last updated: 2025 September 10</p>
+      <p>
+        Code:
+        <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./scripts/color-scheme.js" type="module"></script>
+  <!-- <script src="./scripts/2.js" type="module"></script> -->
+</body>
+
 </html>
