@@ -50,7 +50,7 @@ main {
  * Bonus Exercise 6. Select elements with an attribute of title.
  */
 [title] {
-    text-decoration: light-dark(red, pink) wavy underline;
+    text-decoration: light-dark(rgb(1, 195, 195), pink) wavy underline;
 }
 
 /*
@@ -91,7 +91,7 @@ main {
 /* Changing this "custom property" will change any place where this property is used
    inside a var() function (var is short for variable.) */
 body {
-    --border-color: light-dark(green, yellow);
+    --border-color: light-dark(rgb(238, 173, 221), yellow);
 }
 
 /* Do not modify anything below this line */
