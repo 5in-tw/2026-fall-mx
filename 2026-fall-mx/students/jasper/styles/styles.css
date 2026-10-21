@@ -1,9 +1,4 @@
-body {
-    background-color: light-dark(white, darkgray);
-    color: light-dark( black, white);
-}
-
-footer {
+body, footer {
     background-color: light-dark(white, darkgray);
     color: light-dark( black, white);
 }

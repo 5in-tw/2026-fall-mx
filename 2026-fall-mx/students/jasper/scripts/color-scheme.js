@@ -1,19 +1,28 @@
-console.log("working");
-
 const key = 'color-scheme-choice';
+const chooser = document.getElementById('color-chooser');
+const metaTag = document.querySelector('meta[name="color-scheme"]') || document.querySelector('meta');
 
 function setColorScheme(colorScheme) {
-    const metaTag = document.querySelector('meta');
-    console.log(colorScheme, metaTag);
-    metaTag.setAttribute('content', colorScheme);
+    if (metaTag) {
+        metaTag.setAttribute('content', colorScheme);
+    }
+    localStorage.setItem(key, colorScheme);
 }
-setColorScheme('jasper');
-
-const chooser = document.getElementById('color-chooser');
-console.log(chooser);
 
 function changeColor(event) {
-    console.log(event);
     setColorScheme(event.target.value);
 }
-chooser.addEventListener('change', changeColor);
+
+if (chooser) {
+    chooser.addEventListener('change', changeColor);
+
+    let savedColor = localStorage.getItem(key);
+
+    if (savedColor) {
+        setColorScheme(savedColor);
+        chooser.value = savedColor;
+    } else {
+        setColorScheme('color');
+        chooser.value = 'color';
+    }
+}

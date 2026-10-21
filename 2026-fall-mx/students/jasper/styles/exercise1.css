@@ -8,13 +8,11 @@ h2 {
 /*
  * Exercise 2. Select h2 elements inside the main element.
  */
-main {
-  h2 {
+main h2 {
     margin-top: 0;
     border-top: none;
     border-left: none;
     border-right: none;
-  }
 }
 
 /*
