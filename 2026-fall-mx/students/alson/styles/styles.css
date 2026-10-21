@@ -22,3 +22,8 @@ footer {
     border: 5px solid red;
   }
 }
+
+[type="text"] {
+  border: 6px double purple;
+}
+
