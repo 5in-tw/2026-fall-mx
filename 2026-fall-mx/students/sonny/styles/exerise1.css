@@ -1,0 +1,125 @@
+/*
+ * Exercise 1. Select all h2 elements.
+ */
+h2 {
+    border: 2px dotted var(--border-color);
+}
+
+
+/*
+ * Exercise 2. Select h2 elements inside the main element.
+ */
+main {
+    h2 {
+        margin-top: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+
+/*
+ * Exercise 3. Select the form with an id of snoopy.
+ */
+#snoopy {
+    border: 3px solid var(--border-color);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-image: url(https://chat.google.com/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=ABLWXTemSMX62MsePfhIMAs%2BEEzkBGhhBEji%2Fl3YzS58jQqhWpvR77SjdQLXgymBqLoo9Ov%2FUx3dMNMuoq4xjl48Tr98BinU5CM1GGX9EdlW5iF6pPO8HPZpBbUJ4WMQyjzfy5ITCtwTsPsvYicSyGK9L5g%2FRce7fw8PzoN2jqtwyqTKKreIje7MeohsR%2BMZKL%2FicEooKcQ9em3FpWe02XeYm%2B8F9Jov7LfQBkgiR5TxB1uOE0DJG1QjsBzt3GPO7iUTQ2eg6fYkI2cotgOfcHPEA8CDEUwIs9dUwLwyCopciGyGUF0gFaXF4VHpFdVw%2BDFCVCCZpg3sf7HMHmKyTFom5YARR0W3eavWil%2FwayIZfm9Xwpsn7Zfi9nC7JcEQnqAnOyhRrph6Tkje1C%2BrlMprZe27l%2BdtP4KDz%2B7pf%2BZ47GVToiZLyWexzHA%2BX0Mg0uQ5FVHB4Kt5yxM%2FreIRDm5XRvIIVPXpQDHXek0HzNrggJN2RXMGA%2F%2B7yhWjrrDUrL5WOdVLUJxb8DyofeLk%2BkzUooXS%2FfeND1GwhhWMMV7nXsONYERLEQQ9Kv4N0Vzb6dCqWprz%2FhYx2mTNg%2F1NbUcHvK%2FboB4j87Ar5KZWdanAJ4Smu2WVPozm2VPqMAL1edoLPkCDyga8b3XMsx4myxjaZ8tWfA%3D%3D&allow_caching=true&sz=w512);
+    background-repeat: repeat;
+}
+
+
+/*
+ * Exercise 4. Select elements with the class of form-buttons.
+ */
+.form-buttons {
+    margin-top: 1em;
+}
+
+
+/*
+ * Exercise 5. Select elements that have a type attribute equal to text.
+ */
+[type="text"] {
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1px 5px;
+}
+
+
+/*
+ * Bonus Exercise 6. Select elements with an attribute of title.
+ */
+[title] {
+    text-decoration: light-dark(red, pink) wavy underline;
+}
+
+
+/*
+ * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
+ */
+#snoopy {
+    form {
+        display: block;
+        font-weight: bold;
+        margin-top: 6px;
+        margin-bottom: 3px;
+    }
+}
+
+
+/*
+ * Bonus Exercise 8. Select elements that have a type attribute equal to submit.
+ */
+[type="submit"] {
+    background-color: var(--border-color);
+    color: light-dark(white, black);
+    border: none;
+    border-radius: 5px;
+}
+
+
+/*
+ * Bonus Exercise 9. Select fieldset elements inside the main element.
+ */
+main {
+    fieldset {
+        border: 2px solid var(--border-color);
+        border-radius: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Changing this "custom property" will change any place where this property is used
+   inside a var() function (var is short for variable.) */
+body {
+    --border-color: light-dark(green, yellow);
+}
+
+
+/* Do not modify anything below this line */
+form * {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+
+
+    legend {
+        font-weight: bold;
+    }
+}
+
+
+h1 {
+    margin: 0;
+}
