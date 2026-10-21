@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/exercise1.css" />
+
+    <link rel="icon" href="/2026-fall-mx/favicon.png" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="center line">
+        <div class="big line">
+          <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
+          <b>5IN</b>
+        </div>
+        <menu class="line">
+          <a href="/2026-fall-mx/students/me/">Home</a>
+        </menu>
+      </div>
+    </header>
+
+
+    <main class="center">
+      <div class="headings">
+        <h1><span>Excercise:</span></h1>
+        <h2>CSS Selectors</h2>
+      </div>
+
+      <p>
+        <strong>#1:</strong> <abbr title="Cascasing Style Sheets">CSS</abbr> is fun!
+      </p>
+
+      <p>
+        <strong>#2:</strong> <abbr title="HyperText Markup Language">HTML</abbr> is the structure of our website files.
+      </p>
+
+      <p>
+        <strong>#3:</strong> <abbr title="JavaScript">JS</abbr> is powerful! And kind of hard. But we’ll keep learning!
+      </p>
+
+      <form id="snoopy">
+        <h2>Snoopy Form</h2>
+        <fieldset>
+          <legend>Name:</legend>
+
+          <label>
+            <span>First name:</span>
+            <input type="text" name="firstName">
+          </label>
+
+          <label>
+            <span>Last name:</span>
+            <input type="text" name="lastName">
+          </label>
+        </fieldset>
+
+        <label>
+          <span>Height:</span>
+          <input type="number" name="height"> cm
+        </label>
+
+        <label>
+          <span>Birthday:</span>
+          <input type="date" name="birthday">
+        </label>
+
+        <div class="form-buttons">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="center">
+        <h2>Footer</h2>
+        <p>Last updated: <span>2026 October 14</span></p>
+        <p>
+          Code:
+          <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
+        </p>
+
+        <form id="chooser-of-colors">
+          <fieldset id="color-chooser">
+            <legend>Color scheme</legend>
+            <label>
+              <input type="radio" name="color-scheme-choice" value="light" />
+              Light
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="color-scheme-choice"
+                value="light dark"
+                checked
+              />
+              Auto
+            </label>
+            <label>
+              <input type="radio" name="color-scheme-choice" value="dark" />
+              Dark
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./scripts/color-scheme.js" type="module"></script>
+    <script src="./scripts/exercise1.js" type="module"></script>
+  </body>
+</html>
