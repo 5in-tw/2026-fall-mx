@@ -57,7 +57,7 @@ main {
  * Bonus Exercise 7. Select span elements that are inside the form with an id of snoopy.
  */
 #snoopy {
-    form {
+    span {
         display: block;
         font-weight: bold;
         margin-top: 6px;
