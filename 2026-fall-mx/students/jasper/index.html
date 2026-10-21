@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Jasper's homepage</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="/2026-fall-mx/favicon.png" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="light dark">
   </head>
   <body>
     <header class="header">
@@ -19,9 +20,22 @@
       </div>
     </header>
     <main class="center">
-      <h1>Homepage of Lisa</h1>
-
-      <fieldset>
+      <h1 id="my-title">Homepage of Jasper</h1>
+      <img src="/2026-fall-mx/students/jasper/images/images (1).jpg">
+      <form id="my-form">
+        <label>
+          Test:
+          <input type="color" name="test" value="yellow" />
+        </label>
+        <br>
+        <input type="text" name="test2" value="snoopy">
+        </input>
+        <br>
+        <input type="text" name="test3" value="Woodstock">
+        <input>
+      </form>
+      <br>
+      <fieldset id="color-chooser">
         <legend>Color scheme</legend>
         <label>
           <input type="radio" name="color-scheme-choice" value="light" />
@@ -41,10 +55,13 @@
           Dark
         </label>
       </fieldset>
+      <button id="my-button">
+        test button
+      </button>
     </main>
     <footer class="footer">
       <div class="center">
-        <p>Last updated: 2026 September 14</p>
+        <p>Last updated: 2025 September 10</p>
         <p>
           Code:
           <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
@@ -53,6 +70,7 @@
     </footer>
 
     <script src="./scripts/color-scheme.js" type="module"></script>
+    <!-- <script src="./scripts/practice-2.js" type="module"></script> -->
 
   </body>
 </html>
