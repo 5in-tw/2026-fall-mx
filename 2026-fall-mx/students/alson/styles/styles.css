@@ -1,10 +1,10 @@
 body {
-  background-color: light-dark(rgb(255, 182, 193), aqua);
+  background-color: light-dark(rgb(255, 182, 193), darkgray);
   color: light-dark(black, white);
 }
 
 footer {
-  background-color: light-dark(plum, purple);
+  background-color: light-dark(plum, Beige);
   color: light-dark(white, black);
 }
 
@@ -26,4 +26,3 @@ footer {
 [type="text"] {
   border: 6px double purple;
 }
-
