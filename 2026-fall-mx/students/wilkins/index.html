@@ -2,17 +2,12 @@
 <html lang="en">
   <head>
     <title>Mr. Wilkins: 5IN’s Fall 2026 Mixed Grade</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
     <link rel="stylesheet" href="/2026-fall-mx/styles/project.css" />
-    <link rel="icon" href="/2026-fall-mx/favicon.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
-        }
-      }
-    </script>
+    <link rel="icon" href="/2026-fall-mx/favicon.png" />
+    <meta name="color-scheme" content="light dark" />
   </head>
   <body>
     <header class="header">
@@ -21,38 +16,19 @@
           <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
           <b>5IN</b>
         </div>
-        <menu class="line">
+        <nav class="line">
           <a href="/2026-fall-mx/">Home</a>
+          <a href="/2026-fall-mx/reference/">Coding Reference</a>
           <a href="/2026-fall-mx/#students">Students</a>
           <a href="/2026-fall-mx/#teachers">Teachers</a>
           <a href="/2026-fall-mx/#github">GitHub accounts</a>
-          <!-- <button id="color-mode-button">Light mode</button> -->
-        </menu>
+        </nav>
       </div>
     </header>
     <main class="center">
       <h1>Homepage of Mr. Wilkins</h1>
 
-      <fieldset>
-        <legend>Color scheme</legend>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="light" />
-          Light
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="color-scheme-choice"
-            value="light dark"
-            checked
-          />
-          Auto
-        </label>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="dark" />
-          Dark
-        </label>
-      </fieldset>
+      <button id="my-button">Test button</button>
     </main>
     <footer class="footer">
       <div class="center">
@@ -61,7 +37,31 @@
           Code:
           <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
         </p>
+
+        <fieldset id="color-chooser">
+          <legend>Color scheme</legend>
+          <label>
+            <input type="radio" name="color-scheme-choice" value="light" />
+            Light
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="color-scheme-choice"
+              value="light dark"
+              checked
+            />
+            Auto
+          </label>
+          <label>
+            <input type="radio" name="color-scheme-choice" value="dark" />
+            Dark
+          </label>
+        </fieldset>
       </div>
     </footer>
+
+    <script src="./scripts/color-scheme.js" type="module"></script>
+    <!-- <script src="./scripts/practice-2.js" type="module"></script> -->
   </body>
 </html>
