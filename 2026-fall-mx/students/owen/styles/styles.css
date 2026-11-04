@@ -1,9 +1,32 @@
 body {
-    background-color: light-dark(blue, orange);
-    color: light-dark(yellow, yellow);
+    background-color: light-dark(white, rgb(51, 51, 51));
+    color: light-dark(black, white);
 }
 
 footer {
-    background-color: light-dark(orange, aqua);
-    color: light-dark(aqua, blue);
+    background-color: light-dark(rgb(255, 170, 255), rgb(255, 85, 255));
+    color: light-dark(black, white);
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-chooser {
+    border: 3px solid purple;
+
+    input {
+        display: none;
+    }
+
+    label:has(input:checked) {
+        color: darkgreen;
+        background-color: lightsalmon;
+    }
+}
+
+[type="text"] {
+    border: 6px double purple;
 }
