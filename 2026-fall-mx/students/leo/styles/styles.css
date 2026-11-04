@@ -1,9 +1,32 @@
 body {
-    background-color: light-dark(aqua,blue);
+    background-color: light-dark(rgb(125, 181, 90), rgb(6, 34, 60));
     color: light-dark(palevioletred);
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: light-dark(white, black);
+    color: light-dark(white, black);
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-chooser {
+    border: 3px solid rgb(29, 139, 161);
+
+    input {
+        display: none;
+    }
+
+    label:has(input:checked) {
+        color: azure blue;
+        background-color: antiquewhite;
+    }
+}
+
+[type] {
+   border: 6px double rgb(61, 61, 96);
 }
