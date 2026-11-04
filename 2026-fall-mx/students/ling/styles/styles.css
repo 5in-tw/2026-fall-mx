@@ -1,9 +1,61 @@
 body {
-    background-color: light-dark(rgb(166, 220, 244), rgb(2, 32, 70));
-    color: light-dark(rgb(39, 41, 42), rgb(203, 226, 255));
+    background-color: light-dark(rgb(166, 220, 244), rgb(43, 48, 53));
+    color: light-dark(rgb(39, 41, 42), rgb(247, 248, 249));
 }
 
 footer {
-    background-color: light-dark(rgb(108, 206, 248), rgb(71, 89, 110));
+    background-color: light-dark(rgb(144, 194, 215), rgb(25, 27, 30));
     color: light-dark(rgb(16, 16, 16), rgb(234, 236, 239));
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color-chooser {
+    border: 3px solid rgb(251, 250, 250);
+
+
+    input {
+        display: none;
+
+    }
+}
+
+[type="text"] {
+    border: 6px double rgb(107, 162, 185);
+}
+
+
+
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+fieldset {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
