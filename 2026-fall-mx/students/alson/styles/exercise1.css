@@ -1,12 +1,19 @@
-@keyframes five-pin {
+@keyframes five-spin {
     0% {
-        transform: rotate(0dge);
+        rotate: 0dge;
+        translate: 0px;
     }
+
     100% {
-        transform: rotate(360deg);
+        rotate: 1080deg;
+        translate: 900px;
     }
 }
 
+.spinMe {
+    animation: five-spin 1s linear ;
+    animation-timeline: view();
+}
 
 #box-test {
     font-size: 20px;
