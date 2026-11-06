@@ -1,11 +1,23 @@
 @keyframes five-spin {
   0% {
-    transform: rotate(0deg);
+    rotate: 0deg;
+    translate: 0px;
   }
 
   100% {
-    transform: rotate(360deg);
+    rotate: 1080deg;
+    translate: 900px;
   }
+}
+
+.spinMe {
+  animation: five-spin 2s linear;
+  animation-timeline: view();
+  animation-range: contain;
+}
+
+.bigSpace {
+  padding-bottom: 100vh;
 }
 
 #box-test {
