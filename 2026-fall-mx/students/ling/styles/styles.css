@@ -1,11 +1,11 @@
 body {
-    background-color: light-dark(rgb(166, 220, 244), rgb(43, 48, 53));
-    color: light-dark(rgb(39, 41, 42), rgb(247, 248, 249));
+    background-color: light-dark(rgb(166, 220, 244), rgb(0, 0, 0));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
 }
 
 footer {
-    background-color: light-dark(rgb(144, 194, 215), rgb(25, 27, 30));
-    color: light-dark(rgb(16, 16, 16), rgb(234, 236, 239));
+    background-color: light-dark(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.41));
+    color: light-dark(rgba(0, 0, 0, 0.605), rgb(234, 236, 239));
 }
 
 .center {
@@ -28,6 +28,34 @@ footer {
     border: 6px double rgb(107, 162, 185);
 }
 
+@keyframes logo-image {
+    0% {
+        rotate: 0turn;
+    }
+
+    100% {
+        rotate: 1turn;
+    }
+}
+
+.logo {
+    position: relative;
+
+    img {
+        animation: logo-image 2s linear infinite;
+        scale: 0.6;
+    }
+}
+
+.circle {
+    display: block;
+    border-radius: 48px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(rgb(255, 243, 113),
+            #abdaff 90%);
+    position: absolute;
+}
 
 
 h1 {

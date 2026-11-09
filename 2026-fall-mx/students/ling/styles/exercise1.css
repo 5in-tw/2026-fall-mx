@@ -13,7 +13,7 @@
 .spinMe {
     animation: five-spin 1s linear;
     animation-timeline: view();
-    animation-range: contain;
+    animation-range-start: contain;
 }
 
 .bigSpace {
@@ -31,7 +31,7 @@
     .span1 {
         display: inline;
         border-style: dashed;
-        border-color: rgb(255, 0, 170);
+        border-color: rgb(255, 62, 191);
     }
 
     .span3 {
