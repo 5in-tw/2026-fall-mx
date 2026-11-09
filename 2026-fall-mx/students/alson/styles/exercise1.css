@@ -13,6 +13,11 @@
 .spinMe {
     animation: five-spin 1s linear ;
     animation-timeline: view();
+    animation-range-start: contain;
+}
+
+.bigSpace {
+    padding-bottom: 100vh;
 }
 
 #box-test {
