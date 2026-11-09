@@ -14,7 +14,7 @@
 .spinMe {
   animation: five-spin 2s linear;
   animation-timeline: view();
-  animation-range: contain;
+  animation-range-start: contain;
 }
 .bigspace{
   padding-bottom: 100vh;
@@ -70,7 +70,7 @@ main {
  */
 #snoopy {
   border: 3px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 40px;
   padding: 10px;
   margin-top: 1em;
   margin-bottom: 1em;

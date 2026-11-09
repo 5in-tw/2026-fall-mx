@@ -27,6 +27,37 @@ footer {
     }
 }
 
-[type] {
-   border: 6px double rgb(61, 61, 96);
+[type="text"] {
+    border: 6px double rgb(61, 61, 96);
+}
+
+@keyframes logo-image {
+    0% {
+        rotate: 0turn;
+    }
+
+    100% {
+        rotate: 1turn;
+    }
+}
+
+.logo {
+    position: relative;
+
+    img {
+        animation: logo-image 3s linear infinite;
+        scale: 0.65;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(lightsalmon,
+            #222 90%);
 }
