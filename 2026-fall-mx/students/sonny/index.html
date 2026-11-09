@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>Sonny's homepage</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="/2026-fall-mx/favicon.png" />
     <meta name="color-scheme" content="light dark">
@@ -10,19 +11,33 @@
   <body>
     <header class="header">
       <div class="center line">
-        <div class="big line">
+        <div class="big logo">
+          <span class="circle"></span>
           <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
           <b>5IN</b>
         </div>
-        <menu class="line">
-          <a href="/2026-fall-mx/students/lalisa/">Home</a>
-        </menu>
+        <nav class="line" aria-label="website">
+          <a href="/2026-fall-mx/students/sonny/">Home</a>
+        </nav>
       </div>
     </header>
-    <main class="center">
-      <h1>Homepage of Lisa</h1>
 
-      <fieldset>
+    <main class="center">
+      <h1 id="my title">Sonny's homepage</h1>
+
+        <img src="images/image (3).png"> 
+        <form id="my-form">
+        <p>
+          Test:
+          <input type="color" name="test" value="yellow">
+        <br>
+        <input type="text" name="test2" value="Sonnpy">
+        </br>
+        <input type="text" name="test3" value="Woodstock">
+        </p>
+
+
+      <fieldset id ="color-chooser">
         <legend>Color scheme</legend>
         <label>
           <input type="radio" name="color-scheme-choice" value="light" />
@@ -42,6 +57,9 @@
           Dark
         </label>
       </fieldset>
+      <button id="my-button">
+        Test Button
+    </button>
     </main>
     <footer class="footer">
       <div class="center">
@@ -54,6 +72,7 @@
     </footer>
 
     <script src="./scripts/color-scheme.js" type="module"></script>
+    <!--<script src="./scripts/practice-2.js" type="module"></script>
 
   </body>
 </html>
