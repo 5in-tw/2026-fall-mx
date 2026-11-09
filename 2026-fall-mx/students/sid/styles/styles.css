@@ -32,7 +32,3 @@ h1 {
         background-color: black;
     }
 }
-
-[id] {
-    border: 6px double rgb(0, 0, 0);
-}
