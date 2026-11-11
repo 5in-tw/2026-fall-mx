@@ -11,6 +11,13 @@ footer{
     margin-left: auto;
     margin-right: auto;
 }
+
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;  
+}
 #color-chooser {
     border: 3px solid rgb(191, 82, 191);
 
@@ -32,7 +39,19 @@ h1 {
     rotate: 0turn;
     }
     100% {
-        rotate: 1turn;
+        rotate: -1turn;
+    }
+
+}
+@keyframes logo-name {
+    0% {
+       
+       transform: rotate(0turn) translate(70px);
+        
+    }
+    100% {
+       transform: rotate(1turn) translate(70px);
+       
     }
 }
 
@@ -40,8 +59,16 @@ h1 {
 .logo {
     position: relative;
 img {
-    animation: logo-image 3s linear infinite;
+    animation: logo-image  10s linear infinite;
     scale: 0.65;
+
+}
+
+b { 
+    animation:  logo-name 3s linear infinite;
+    position: absolute;
+    top: 31px;
+    left: 27px;
 }
 }
 
@@ -54,7 +81,8 @@ img {
     width: 80px;
     height: 80px;
     background: linear-gradient(
-        rgb(121, 121, 207),
+     100deg,
+    rgb(121, 121, 207),
         
         rgb(249, 243, 243) 90%
     );
