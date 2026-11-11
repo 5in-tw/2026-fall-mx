@@ -13,7 +13,7 @@ translate: 900px;
 .spinMe {
   animation: five-spin 2s linear /*infinite */;
   animation-timeline: view();
-  animation-range: contain;
+  animation-range-start: contain;
 }
 
 .bigSpace {
