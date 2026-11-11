@@ -21,6 +21,13 @@ footer {
     margin-right: auto;
 }
 
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #color-chooser {
     border: 3px solid purple;
 
@@ -45,8 +52,20 @@ footer {
     }
 
     100% {
-        rotate: 1turn;
+        rotate: -1turn;
     }
+}
+
+@keyframes logo-name {
+    0% {
+        transform: rotate(0turn) translate(70px);
+    }
+
+    100% {
+        transform: rotate(1turn) translate(70px);
+
+    }
+
 }
 
 .logo {
@@ -54,8 +73,15 @@ footer {
 
 
     img {
-        animation: logo-image 3s linear infinite;
+        animation: logo-image 10s linear infinite;
         scale: 0.65;
+    }
+
+    b {
+        animation: logo-name 3s linear infinite;
+        position: absolute;
+        top: 31px;
+        left: 27px;
     }
 }
 
