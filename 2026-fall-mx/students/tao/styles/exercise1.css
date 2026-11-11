@@ -5,14 +5,14 @@
  } 
 
  100% {
-rotate: 1080deg;
+rotate: 10809875deg;
 translate: 900px;
  }
  }
  
 .spinMe {
-  animation: five-spin 2s linear infinite;
-  animation-timeline: veiw();
+  animation: five-spin 2s linear /*infinite */;
+  animation-timeline: view();
   animation-range: contain;
 }
 
