@@ -20,6 +20,13 @@ h1 {
   margin-right: auto;
 }
 
+.line {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #color-chooser {
   border: 3px solid purple;
 
@@ -42,7 +49,16 @@ h1 {
     rotate: 0turn;
   }
   100% {
-    rotate: 1turn;
+    rotate: -1turn;
+  }
+}
+
+@keyframes logo-name {
+  0% {
+    transform: rotate(0turn) translate(70px);
+  }
+  100% {
+    transform: rotate(1turn) translate(70px);
   }
 }
 
@@ -50,8 +66,15 @@ h1 {
   position: relative;
 
   img {
-    animation: logo-image 3s linear infinite;
+    animation: logo-image 10s linear infinite;
     scale: 0.65;
+  }
+
+  b {
+    animation: logo-name 3s linear infinite;
+    position: absolute;
+    top: 31px;
+    left: 27px;
   }
 }
 
@@ -64,6 +87,7 @@ h1 {
   width: 80px;
   height: 80px;
   background: linear-gradient(
+    100deg,
     lightsalmon,
     #222 90%
   );
