@@ -4,7 +4,7 @@ body {
 }
 
 footer {
-    background-color: light-dark(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.41));
+    background-color: light-dark(rgba(95, 95, 95, 0.126), rgba(255, 255, 255, 0.41));
     color: light-dark(rgba(0, 0, 0, 0.605), rgb(234, 236, 239));
 }
 
@@ -12,6 +12,13 @@ footer {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #color-chooser {
@@ -34,27 +41,49 @@ footer {
     }
 
     100% {
-        rotate: 1turn;
+        rotate: -1turn;
     }
 }
+
+
+@keyframes logo-name {
+    0% {
+        transform: rotate(0turn) translate(70px);
+    }
+
+    100% {
+        transform: rotate(1turn) translate(70px);
+    }
+}
+
+
 
 .logo {
     position: relative;
 
     img {
-        animation: logo-image 2s linear infinite;
+        animation: logo-image 10s linear infinite;
         scale: 0.6;
+    }
+
+    b {
+        animation: logo-name 3s linear infinite;
+        position: absolute;
+        top: 31px;
+        left: 27px;
     }
 }
 
+
+
 .circle {
+    position: absolute;
     display: block;
-    border-radius: 48px;
+    border-radius: 40px;
     width: 80px;
     height: 80px;
-    background: linear-gradient(rgb(255, 243, 113),
+    background: linear-gradient(135deg, rgb(255, 243, 113),
             #abdaff 90%);
-    position: absolute;
 }
 
 
