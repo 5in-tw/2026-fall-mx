@@ -1,6 +1,51 @@
+@keyframes five-spin {
+  0% {
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 1080deg;
+    translate: 500px;
+  }
+}
+
+.spinMe{ 
+ animation-timeline: view();
+ animation-range-start: contain;
+ animation: five-spin 2s linear;
+}
+
+.bigSpace{
+  padding-bottom: 100%;
+}
+
 /*
+
  * Exercise 1. Select all h2 elements.
  */
+#box-text{
+  font-size: 20px;
+  span{
+    border: 1px dotted rgb(222, 0, 0);
+  }
+}
+span{
+  display: inline;
+  border-style: dashed;
+  border-color: rgb(208, 0, 0);
+}
+
+span{
+  border: 1px dotted blue;
+}
+
+.span3 {
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  height: 50px;
+  width: 25;
+}
+
 h2 {
   border: 2px dotted var(--border-color);
 }
@@ -26,10 +71,9 @@ main {
   padding: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-image: url(https://5in-tw.github.io/2026-fall-mx/students/wilkins/images/snoopy.png);
-  background-repeat: repeat;
+  background-image: url(https://i.pinimg.com/736x/3b/0b/b7/3b0bb7055ff5ade1cea2c1bbd6fe907c.jpg);
+  background-repeat:space;
 }
-
 /*
  * Exercise 4. Select elements with the class of form-buttons.
  */
@@ -90,7 +134,7 @@ main {
 /* Changing this "custom property" will change any place where this property is used
    inside a var() function (var is short for variable.) */
 body {
-  --border-color: light-dark(green, yellow);
+  --border-color: light-dark(rgb(185, 48, 48), rgb(240, 145, 145));
 }
 
 /* Do not modify anything below this line */
@@ -107,3 +151,4 @@ form * {
 h1 {
   margin: 0;
 }
+

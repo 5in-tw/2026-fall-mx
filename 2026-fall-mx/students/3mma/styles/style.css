@@ -1,33 +1,99 @@
-html{
-    background-color: light-dark(rgb(243, 243, 255), rgb(218, 212, 255))
+html {
+  background-color: light-dark(rgb(243, 243, 255), rgb(218, 212, 255))
 }
-#kaitoBD{
+
+#kaitoBD {
   width: 300px;
   border: 3px solid rgb(243, 243, 255);
   border-radius: 20px;
 }
-.footer{
+
+.footer {
   background-color: light-dark(rgb(211, 211, 255), rgb(178, 166, 255))
 }
 
 
-.center{
+.center {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
- html{
+
+.line{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+html {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
 #color-chooser {
-  lable:has( input:checked){
+  lable:has(input:checked) {
     background: rgb(147, 147, 255);
   }
 }
 
-[type="text"]{
+[type="text"] {
   border: 6px double rgb(174, 174, 255);
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(100deg,
+      rgb(189, 189, 255),
+      rgb(165, 165, 255));
+}
+
+#color-chooser {
+  width: fit-content;
+  border-radius: 30px;
+}
+
+.logo {
+  position: relative;
+
+  img {
+    animation: logo-image 10s linear infinite;
+    scale: 0.65;
+
+
+  }
+
+  b {
+    animation: logo-name 3s linear infinite;
+    position: absolute;
+    top: 31px;
+    left: 27px;
+  }
+}
+
+@keyframes logo-image {
+  0% {
+    rotate: 0turn;
+  }
+
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@keyframes logo-name{
+
+  0%{
+    transform: rotate(0turn) translate(70px);
+  }
+  100%{
+    transform: rotate(1turn) translate(70px);
+  }
 }
