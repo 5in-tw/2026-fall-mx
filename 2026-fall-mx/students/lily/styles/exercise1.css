@@ -1,13 +1,44 @@
+.play-circle {
+    display:block;
+    width:40px;
+    height:60px;
+    background:#000000;
+    border-radius:50%;
+    padding:10px;
+}
+.play-triangle{
+    display: ;
+}
+
+
+
+
+
+
+
 @keyframes five-spin {
     0% {
-        transform: rotate(0deg);
+        rotate: 0deg;
+        translate: -990px;
     }
 
     100% {
-        transform: rotate(360deg);
+        rotate: 1800deg;
+        translate: 990px;
     }
 }
 
+.spinMe {
+    animation: five-spin 1s linear;
+    animation-timeline: view();
+    animation-range-start: contain;
+}
+
+
+.bigSpace {
+    padding-bottom: 100vh;
+
+}
 
 #box-text {
     font-size: 20px;
@@ -19,6 +50,8 @@
 
     .span1 {
         display: inline;
+        border-style: dashed;
+        border-color: brown;
     }
 
     .span3 {
@@ -56,8 +89,9 @@ h2 {
     padding: 10px;
     margin-top: 1em;
     margin-bottom: 1em;
-    background-image: url(/2026-fall-mx/students/lily/youcam-creation-20261021143832.jpg);
+    background-image: url(/2026-fall-mx/students/lily/youcam-creation-20261021141442-removebg-preview\ \(4\).png);
     background-repeat: repeat;
+    background-size: 250px;
 }
 
 /*
