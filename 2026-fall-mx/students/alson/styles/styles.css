@@ -1,10 +1,10 @@
 body {
-  background-color: light-dark(rgb(255, 182, 193), darkgray);
+  background-color: light-dark(rgb(255, 182, 193), white);
   color: light-dark(black, white);
 }
 
 footer {
-  background-color: light-dark(plum, Beige);
+  background-color: light-dark(plum, white);
   color: light-dark(white, black);
 }
 
@@ -12,6 +12,13 @@ footer {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.line{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #color-chooser {
@@ -32,16 +39,34 @@ footer {
     rotate: 0turn;
   }
   100% {
-    rotate: 100turn;
+    rotate: -1turn;
   }
 }
+
+@keyframes logo-name {
+  0% {
+    transform: rotate(0turn) translate(70px);
+  }
+  100% {
+    transform: rotate(1turn) translate(70px);
+
+  }
+}
+
 
 .logo {
   position: relative;
   
   img {
-    animation: logo-image 150s linear infinite;
+    animation: logo-image 10s linear infinite;
     scale:0.65 ;
+  }
+
+  b{
+    animation: logo-name 3s linear infinite;
+    position: absolute;
+    top: 31px;
+    left: 27px;
   }
 }
 
@@ -54,6 +79,7 @@ footer {
   width: 80px;
   height: 80px;
   background: linear-gradient(
+    100deg,
     rgb(239, 151, 119),
     rgb(151, 99, 83),
     rgb(25, 25, 25)
