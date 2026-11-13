@@ -1,6 +1,43 @@
-/*
- * Exercise 1. Select all h2 elements. <h2>
- */
+@keyframes five-spin{
+  0% {
+   rotate: 0deg;
+   translate: 0px;
+  }
+  100%{
+   rotate: 1000deg;
+   translate: 200px;
+  }
+}
+
+.spinMe{
+ animation: five-spin 2s linear;
+ animation-timeline: view();
+ animation-range-start: contain;
+}
+
+.bigSpace{
+  padding-bottom: 900vh;
+}
+#box-test {
+  font-size: 20px;
+
+  span {
+    border: 1px dotted rgb(0, 140, 255);
+  }
+
+  .span1 {
+    display: inline;
+    border-style: dashed;
+    border-color: aqua;
+  }
+  .span3 {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 25px;
+  }
+}
 h2 {
   border: 2px dotted var(--border-color);
 }
