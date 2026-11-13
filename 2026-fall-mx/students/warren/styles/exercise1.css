@@ -1,3 +1,15 @@
+.play-circle {
+display: block;
+width: 40px;
+height: 40px;
+background: black;
+border-radius: 20px; 
+padding: 10px;
+}
+
+.play-triangle {
+
+}
 @keyframes five-spin {
   0% {
     rotate: 0deg;
