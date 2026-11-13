@@ -1,3 +1,14 @@
+.play-circle {
+display: block;
+widTH: 40px;
+height: 40px;
+background: black;
+border-radius: 50%;
+padding: 10px;
+}
+.play-triangle {
+display: block;
+}
 @keyframes five-spin {
   0% {
 
@@ -140,7 +151,6 @@ main {
    inside a var() function (var is short for variable.) */
 body {
   --border-color: light-dark(green, yellow);
-  eq
 }
 
 /* Do not modify anything below this line */
