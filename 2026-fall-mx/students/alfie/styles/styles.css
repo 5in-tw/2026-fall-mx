@@ -1,5 +1,5 @@
 body {
-    background-color: light-dark(rgba(95, 158, 160, 0.334), cadetblue);
+    background-color: light-dark(rgb(255, 255, 255), cadetblue);
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
