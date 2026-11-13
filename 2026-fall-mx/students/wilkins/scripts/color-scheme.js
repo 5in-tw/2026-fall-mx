@@ -1,4 +1,4 @@
-const key = "color-scheme-choice";
+const key = 'color-scheme-choice';
 
 // Use Inspector to change meta tag's "content" value.
 function setColorScheme(colorScheme) {
@@ -10,7 +10,7 @@ function setColorScheme(colorScheme) {
   // Store the color scheme.
   localStorage.setItem(key, colorScheme);
 }
-// setColorScheme("something");
+// setColorScheme("light");
 
 const chooser = document.getElementById("color-chooser");
 // console.log(chooser);

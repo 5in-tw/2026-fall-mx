@@ -1,0 +1,22 @@
+alson-and-mason {
+    color: hotpink;
+    background: black;
+    font-size: 30px;
+    padding: 5px;
+}
+
+p {
+  border: 3px dashed green;
+}
+
+.mason-and-alson {
+  color: blue;
+}
+
+#alson {
+  border-left: 5px solid pink;
+}
+
+#mason {
+  border-left: 10px solid hotpink;
+}
