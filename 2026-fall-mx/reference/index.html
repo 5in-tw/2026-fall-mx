@@ -17,7 +17,7 @@
           </span>
           <b>5IN</b>
         </div>
-        <nav class="line">
+        <nav class="line" aria-label="Website">
           <a href="/2026-fall-mx/">Home</a>
           <a href="/2026-fall-mx/reference/">Coding Reference</a>
           <a href="/2026-fall-mx/#students">Students</a>
@@ -42,7 +42,7 @@
 
       <h1 id="html">HTML Reference</h1>
 
-      <nav>
+      <nav aria-label="HTML Reference">
         <ul>
           <li><a href="#basics">HTML Basics</a></li>
           <li>
@@ -217,6 +217,7 @@
           <p>
             The title of the document is displayed in the web browser's tab.
           </p>
+          <pre><code>&lt;title&gt;Coding Reference: 5IN Experimental Education Institute Taipei&lt;/title&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/title"
@@ -231,7 +232,15 @@
         <dd>
           <p>
             This element contains CSS that is applied to the current document.
+            HTML is not allowed inside a &lt;style&gt; element.
           </p>
+          <pre><code>&lt;style&gt;
+  .center {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+&lt;/style&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style"
@@ -245,7 +254,11 @@
           CSS stylesheet link element
         </dt>
         <dd>
-          <p>This link loads a CSS file to style the web page.</p>
+          <p>
+            This link loads a CSS file to style the web page. This allows us to
+            use the same CSS for many HTML files.
+          </p>
+          <pre><code>&lt;link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" /&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link"
@@ -267,6 +280,7 @@
             currently in-use by the Operating System (Windows, MacOS, Linux,
             etc.)
           </p>
+          <pre><code>&lt;meta name="color-scheme" content="light dark" /&gt;</code></pre>
 
           <p>
             <a
@@ -290,6 +304,10 @@
         </dt>
         <dd>
           <p>The main content area contains the central topic of a document.</p>
+          <pre><code>&lt;main&gt;
+  &lt;h1&gt;🐈‍⬛&lt;/h1&gt;
+  &lt;p&gt;Meow.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
 
           <p>
             <a
@@ -309,6 +327,10 @@
             elements.
           </p>
           <p>Not to be confused with the &lt;head&gt; element.</p>
+          <pre><code>&lt;header&gt;
+  &lt;img src="logo.gif" alt="" /&gt;
+  &lt;b&gt;John&lt;/b&gt;
+&lt;/header&gt;</code></pre>
 
           <p>
             <a
@@ -326,6 +348,9 @@
             A footer typically contains information about the author of the
             section, copyright data or links to related documents.
           </p>
+          <pre><code>&lt;footer&gt;
+  &lt;p&gt;&copy; 2026&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/footer"
@@ -420,6 +445,10 @@
         </dt>
         <dd>
           <p>This element contains navigation links.</p>
+          <pre><code>&lt;nav&gt;
+  &lt;a href="/"&gt;Home&lt;/a&gt;
+  &lt;a href="/students"&gt;Students&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav"
@@ -441,6 +470,12 @@
         </dt>
         <dd>
           <p>Text content is often grouped into paragraphs.</p>
+          <pre><code>&lt;p&gt;
+  This text will be in the first paragraph.
+&lt;/p&gt;
+&lt;p&gt;
+  This text will be in the second paragraph.
+&lt;/p&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/p"
@@ -459,6 +494,9 @@
             element if you cannot find a better element for the content and you
             need to style the content using a <code>class=""</code> attribute.
           </p>
+          <pre><code>&lt;div class="box"&gt;
+  &lt;p&gt;The box around the paragraph can be styled using the div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/div"
@@ -476,6 +514,9 @@
             with an optional caption. The figure, its caption, and its contents
             are referenced as a single unit within the rest of the document.
           </p>
+          <pre><code>&lt;figure&gt;
+  &lt;img src="snoopy.gif" /&gt;
+&lt;/figure&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure"
@@ -493,6 +534,10 @@
             This element is a caption or legend describing the rest of the
             contents of its parent <code>&lt;figure&gt;</code> element.
           </p>
+          <pre><code>&lt;figure&gt;
+  &lt;img src="snoopy.gif" /&gt;
+  &lt;figcaption&gt;Snoopy is Charlie Brown’s dog.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figcaption"

@@ -1,3 +1,47 @@
+@keyframes five-spin {
+  0% {
+    rotate: 0deg;
+    translate: 0px;
+  }
+
+  100% {
+    rotate: 1080deg;
+    translate: 900px;
+  }
+}
+
+.spinMe {
+  animation: five-spin 2s linear;
+  animation-timeline: view();
+  animation-range-start: contain;
+}
+
+.bigSpace {
+  padding-bottom: 100vh;
+}
+
+#box-test {
+  font-size: 20px;
+
+  span {
+    border: 1px dotted red;
+  }
+
+  .span1 {
+    display: inline;
+    border-style: dashed;
+    border-color: darkgreen;
+  }
+
+  .span3 {
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    height: 50px;
+    width: 25px;
+  }
+}
+
 /*
  * Exercise 1. Select all h2 elements.
  */
