@@ -1,0 +1,94 @@
+body {
+  background-color: light-dark(aqua, darkblue);
+  color: light-dark(black, white);
+}
+
+footer {
+  background-color: light-dark(black, grey);
+  color: light-dark(white, black);
+}
+
+h1 {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#color-chooser {
+  border: 3px solid purple;
+
+  input {
+    display: none;
+  }
+
+  label:has(input:checked) {
+    color: darkgreen;
+    background: lightsalmon;
+  }
+}
+
+[type="text"] {
+  border: 6px double purple;
+}
+
+@keyframes logo-image {
+  0% {
+    rotate: 0turn;
+  }
+  100% {
+    rotate: -1turn;
+  }
+}
+
+@keyframes logo-name {
+  0% {
+    transform: rotate(0turn) translate(70px);
+  }
+  100% {
+    transform: rotate(1turn) translate(70px);
+  }
+}
+
+.logo {
+  position: relative;
+
+  img {
+    animation: logo-image 10s linear infinite;
+    scale: 0.65;
+  }
+
+  b {
+    animation: logo-name 3s linear infinite;
+    position: absolute;
+    top: 31px;
+    left: 27px;
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(
+    100deg,
+    lightsalmon,
+    #222 90%
+  );
+}
