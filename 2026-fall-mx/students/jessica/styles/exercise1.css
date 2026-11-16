@@ -8,18 +8,29 @@
 } 
 .play-triangle {
 display: block;
+margin-left: 2px;
 border-style: solid;
 border-top-width: 10px;
-border-top-color: aliceblue;
+border-top-color: transparent;
 border-bottom-width: 10px;
-border-bottom-color: aliceblue;
-border-left-width:  10px;
+border-bottom-color: transparent;
+border-left-width:  15px;
 border-left-color: rgb(154, 206, 252);
-border-right-width: 10px;
-border-right-color: aliceblue;
+border-right-width: 0px;
+border-right-color: transparent;
 }
 
 
+.play{
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  box-shadow: 1px 1px 1px plum(0, 0, 0, 0.5);
+}
+.play:active{
+  translate: 1px 1px;
+  box-shadow: none;
+}
 @keyframes five-spin{
   0% {
    rotate: 0deg;
