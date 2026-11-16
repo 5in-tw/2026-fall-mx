@@ -6,8 +6,17 @@
  border-radius: 50%;
  padding: 10px;
 } 
-.play-circle {
-
+.play-triangle {
+display: block;
+border-style: solid;
+border-top-width: 10px;
+border-top-color: aliceblue;
+border-bottom-width: 10px;
+border-bottom-color: aliceblue;
+border-left-width:  10px;
+border-left-color: rgb(154, 206, 252);
+border-right-width: 10px;
+border-right-color: aliceblue;
 }
 
 
@@ -35,13 +44,13 @@
   font-size: 20px;
 
   span {
-    border: 1px dotted rgb(0, 140, 255);
+    border: 1px dotted rgb(174, 125, 154);
   }
 
   .span1 {
     display: inline;
     border-style: dashed;
-    border-color: aqua;
+    border-color: rgb(165, 88, 134);
   }
   .span3 {
     display: block;
