@@ -1,10 +1,26 @@
-alson-and-mason {
-    color: hotpink;
-    background-color: black;
-    font-size: 30px;
-    padding: 5px;
+* {
+    box-sizing: border-box;
 }
 
-p {
-    border: 1px dotted green;    
+.play-circle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: black;
+}
+
+.play-triangle {
+    display: block;
+    border-left-color: white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-style: solid;
+    border-top-width: 10px;
+    border-left-width: 17.3px;
+    border-right-width: 0;
+    border-bottom-width: 10px;
+    margin-left: 3px;
 }

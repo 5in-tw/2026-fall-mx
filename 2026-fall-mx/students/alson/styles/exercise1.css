@@ -1,13 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.play {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+
+.play:active {
+    translate: 1px 1px;
+    box-shadow: none;
+}
+
 .play-circle {
     display: block;
     width: 40px;
     height: 40px;
-    background-color: black;
     border-radius: 50%;
     padding: 10px;
+    background-color: black;
 }
-.play-traingle {
-    
+
+.play-triangle {
+    display: block;
+    border-left-color: white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-style: solid;
+    border-top-width: 10px;
+    border-left-width: 17.3px;
+    border-right-width: 0;
+    border-bottom-width: 10px;
+    margin-left: 3px;
 }
 
 @keyframes five-spin {
@@ -23,7 +50,7 @@
 }
 
 .spinMe {
-    animation: five-spin 1s linear ;
+    animation: five-spin 1s linear;
     animation-timeline: view();
     animation-range-start: contain;
 }
@@ -164,4 +191,3 @@ form * {
 h1 {
     margin: 0;
 }
-
