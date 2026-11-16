@@ -3,8 +3,8 @@ const button = document.getElementById("my-button");
 console.log(button);
 
 // 2. Experiment by: adding an id attribute to an element.
-const myTitle = document.getElementById("my-title");
-console.log(myTitle);
+const title = document.getElementById("my-title");
+console.log(title);
 
 // 3. Create a function
 function testMyButton(event) {
@@ -12,7 +12,7 @@ function testMyButton(event) {
 }
 
 // 4. Call a function.
-testMyButton("do the action!");
+testMyButton("NOW");
 
 // 5. Make button click do something.
 button.addEventListener("click", testMyButton);
