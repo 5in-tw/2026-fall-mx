@@ -1,0 +1,34 @@
+body {
+  background-color: light-dark(aqua, darkblue);
+  color: light-dark(black, white);
+
+
+  font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+footer {
+  background-color: light-dark(black, grey);
+  color: light-dark(white, black);
+}
+
+.center {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#color-chooser {
+  border: 3px solid purple;
+
+  input {
+    display: none;
+  }
+
+  label:has(input:checked) {
+    color: darkgreen;
+    background-color: lightsalmon;
+  }
+}
