@@ -19,6 +19,7 @@ padding: 10px;
 
 .play-triangle {
 display: block;
+margin-left: 2px;
 border-style: solid;
 border-top-width: 10px;
 border-top-color: transparent;
