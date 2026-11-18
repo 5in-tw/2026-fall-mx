@@ -1,111 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Exercise 1</title>
-    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/exercise1.css" />
 
-    <link rel="icon" href="/2026-fall-mx/favicon.png" />
-    <meta name="color-scheme" content="light dark" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="center line">
-        <div class="big line">
-          <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
-          <b>5IN</b>
-        </div>
-        <menu class="line">
-          <a href="/2026-fall-mx/students/me/">Home</a>
-        </menu>
+<head>
+  <title>Exercise 1</title>
+  <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/exercise1.css" />
+
+  <link rel="icon" href="/2026-fall-mx/favicon.png" />
+  <meta name="color-scheme" content="light dark" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="center line">
+      <div class="big line">
+        <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
+        <b>5IN</b>
       </div>
-    </header>
+      <menu class="line">
+        <a href="/2026-fall-mx/students/me/">Home</a>
+      </menu>
+    </div>
+  </header>
 
 
-    <main class="center">
-      <div class="headings">
-        <h1><span>Excercise:</span></h1>
-        <h2>CSS Selectors</h2>
-      </div>
+  <main class="center">
+    <div class="headings">
+      <h1><span>Excercise:</span></h1>
+      <h2>CSS Selectors</h2>
+    </div>
 
 
-      <figure>
+    <figure>
       <figcaption>Beep</figcaption>
-      <audio controls src="justin-bieber-nicki-minaj-beauty-and-a-beat-lyrics-128-ytshorts.savetube.me.mp3"></audio>  
-    
-    <button id="playBeep" class="play">
-      <span class="play-circle">
-        <span class="play-triangle"></span>
-      </span>
-      </span>
-      Play
-    </button> 
+      <audio controls src="chime.mp3" id="beepSound"></audio>
+
+      <button id="playBeep" class="play">
+        <span class="play-circle">
+          <span class="play-triangle"></span>
+        </span>
+        </span>
+        Play
+      </button>
     </figure>
 
-      <p>
-        <strong>#1:</strong> <abbr title="Cascasing Style Sheets">CSS</abbr> is fun!
-      </p>
+    <figure>
+      <figcaption>Clicky sound</figcaption>
+  <audio src="/2026-fall-mx/media/keypress-1.mp3" controls id="click1"></audio>
+  <audio src="/2026-fall-mx/media/keypress-2.mp3" controls id="click2"></audio>
+  <audio src="/2026-fall-mx/media/keypress-3.mp3" controls id="click3"></audio>
+      </figure>
 
-      <p>
-        <strong>#2:</strong> <abbr title="HyperText Markup Language">HTML</abbr> is the structure of our website files.
-      </p>
 
-      <p>
-        <strong>#3:</strong> <abbr title="JavaScript">JS</abbr> is powerful! And kind of hard. But we’ll keep learning!
-      </p>
+    <p>
+      <strong>#1:</strong> <abbr title="Cascasing Style Sheets">CSS</abbr> is fun!
+    </p>
 
-      <form id="snoopy">
-        <h2>Snoopy Form</h2>
-        <fieldset>
-          <legend>Name:</legend>
+    <p>
+      <strong>#2:</strong> <abbr title="HyperText Markup Language">HTML</abbr> is the structure of our website files.
+    </p>
 
-          <label>
-            <span>First name:</span>
-            <input type="text" name="firstName">
-          </label>
+    <p>
+      <strong>#3:</strong> <abbr title="JavaScript">JS</abbr> is powerful! And kind of hard. But well keep learning!
+    </p>
 
-          <label>
-            <span>Last name:</span>
-            <input type="text" name="lastName">
-          </label>
-        </fieldset>
+    <form id="snoopy">
+      <h2>Snoopy Form</h2>
+      <fieldset>
+        <legend>Name:</legend>
 
         <label>
-          <span>Height:</span>
-          <input type="number" name="height"> cm
+          <span>First name:</span>
+          <input type="text" name="firstName">
         </label>
 
         <label>
-          <span>Birthday:</span>
-          <input type="date" name="birthday">
+          <span>Last name:</span>
+          <input type="text" name="lastName">
         </label>
+      </fieldset>
 
-        <div class="form-buttons">
-          <input type="reset" value>
+      <label>
+        <span>Height:</span>
+        <input type="number" name="height"> cm
+      </label>
 
-          
-          <input type="submit" value="Submit">
-        </div>
-      </form>
-<p id="box-text">
-  <span class="span1">Span #1</span>
-  <span class="span2">Span #2</span>
-  <span class="span3">Span #3</span>
-  <span class="span4">Span #4</span>
-  <span class="span5">Span #5</span>
-</p>
+      <label>
+        <span>Birthday:</span>
+        <input type="date" name="birthday">
+      </label>
 
-<p>
+      <div class="form-buttons">
+        <input type="reset" value>
 
-<p class="bigSpace">
-<img 
-class = "spinMe"
-src = "./images/Image_20261016_135828_251 (1).jpeg"
-alt = "5in"
-width = "200
+
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+    <p id="box-text">
+      <span class="span1">Span #1</span>
+      <span class="span2">Span #2</span>
+      <span class="span3">Span #3</span>
+      <span class="span4">Span #4</span>
+      <span class="span5">Span #5</span>
+    </p>
+
+    <p>
+
+    <p class="bigSpace">
+      <img class="spinMe" src="./images/Image_20261016_135828_251 (1).jpeg" alt="5in" width="200
 ">
-</p>
+    </p>
     <footer class="footer">
       <div class="center">
         <h2>Footer</h2>
@@ -123,12 +129,7 @@ width = "200
               Light
             </label>
             <label>
-              <input
-                type="radio"
-                name="color-scheme-choice"
-                value="light dark"
-                checked
-              />
+              <input type="radio" name="color-scheme-choice" value="light dark" checked />
               Auto
             </label>
             <label>
@@ -142,6 +143,7 @@ width = "200
 
     <script src="./scripts/color-scheme.js" type="module"></script>
     <script src="./scripts/exercise1.js" type="module"></script>
-     <script src="./scripts/audio-test.js" type="module"></script>
-  </body>
+    <script src="./scripts/audio-test.js" type="module"></script>
+</body>
+
 </html>

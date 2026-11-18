@@ -111,7 +111,7 @@ h2 {
     display: block;
     font-weight: bold;
     margin-top: 6px;
-    ` margin-bottom: 3px;
+    margin-bottom: 3px;
   }
 }
 
@@ -125,7 +125,8 @@ h2 {
   border-radius: 5px;
 }
 
-q * Bonus Exercise 9. Select fieldset elements inside the main element. */ main {
+/* Bonus Exercise 9. Select fieldset elements inside the main element. */
+main {
   fieldset {
     border: 2px solid var(--border-color);
     border-radius: 5px;
