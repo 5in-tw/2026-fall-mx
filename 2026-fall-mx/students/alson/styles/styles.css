@@ -1,11 +1,11 @@
 body {
-  background-color: light-dark(rgb(255, 182, 193), white);
+  background-color: light-dark(rgb(255, 182, 193), black);
   color: light-dark(black, white);
 }
 
 footer {
   background-color: light-dark(plum, white);
-  color: light-dark(white, black);
+  color: light-dark(black,white);
 }
 
 .center {
