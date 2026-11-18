@@ -1,3 +1,29 @@
+.play {
+  border-radius: 5px;
+  border: none;
+}
+
+.play-circle {
+  display: block;
+  border-radius: 50%;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.play-triangle {
+   display: block;
+border-style: solid;
+border-top-width: 10px;
+border-top-color: transparent;
+border-bottom-width: 10px;
+border-bottom-color: transparent;
+border-left-width: 20px;
+border-left-color: white;
+border-right-width: 0px;
+border-right-color: transparent;
+}
 @keyframes five-spin {
  0% {
   rotate: 0deg;
