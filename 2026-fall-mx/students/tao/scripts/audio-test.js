@@ -6,3 +6,13 @@ function beep() {
 }
 
 playButton.addEventListener("click", beep);
+
+const click1 = document.getElementById("click1");
+const click2 = document.getElementById("click2");
+const click3 = document.getElementById("click3");
+
+const clickysound = [
+    click1,
+    click2,
+    click3
+];
