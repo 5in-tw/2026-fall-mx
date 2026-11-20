@@ -1,9 +1,9 @@
 let alphabet = [
-    "Alfie so handsome",
-    "bbox",
-    "c",
-    "d",
-    "e"
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
 ];
 console.log(alphabet);
 console.log( alphabet.length );
