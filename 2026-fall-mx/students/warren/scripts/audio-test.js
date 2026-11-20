@@ -26,4 +26,4 @@ function randomClick(){
     const item = randomItem(clickSounds);
     item.play();
 }
-playRandomButton.addEventListener("click", randomClick);
+playRandomButton.addEventListener("click", randomClick) ;
