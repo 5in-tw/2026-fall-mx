@@ -16,3 +16,23 @@ const clickysound = [
     click2,
     click3
 ];
+console.log("click sounds", clickysound);
+console.log("length", clickysound.length);
+
+function randomItem(alist) {
+    const randomNumber = Math.floor(alist.length *Math.random());
+    return alist[randomNumber];
+}
+
+console.log(
+    "random sound",
+    randomItem(clickysound)
+);
+
+
+const playRandomButton = document.getElementById("play-random");
+function randomClick() {
+    const item = randomItem(clickysound);
+    item.play();
+}
+playRandomButton.addEventListener("click", randomClick);
