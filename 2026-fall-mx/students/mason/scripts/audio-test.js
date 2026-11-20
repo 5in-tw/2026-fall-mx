@@ -14,3 +14,24 @@ const click2 = document.getElementById("click2");
 const click3 = document.getElementById("click3");
 
 const clickSounds = [click1, click2, click3];
+
+console.log("clicky sounds", clickSounds);
+console.log("length", clickSounds.length);
+
+
+function randomItem(aList) {
+const randomNumber = Math.floor(aList.length * Math.random());
+return aList[randomNumber];
+}
+
+console.log(
+  "random sound",
+ randomItem(clickSounds)
+);
+
+const playRandomButton = document.getElementById("play-random");
+function randomClick() {
+    const item = randomItem(clickySounds);
+    item.play();
+}
+playRandomButton.addEventListener("click", randomClick);
