@@ -1,5 +1,4 @@
 const beepSound = document.getElementById("beepSound");
-
 const playButtom = document.getElementById("playBeep");
 
 function beep() {
@@ -15,5 +14,26 @@ const click3 = document.getElementById("click3");
 const clickySounds = [
     click1,
     click2,
-    click3,
+    click3
 ];
+
+console.log("click sounds", clickySounds);
+console.log("length", clickySounds.length);
+
+
+function randomItem(aList) {
+    const randomNumber = Math.floor(aList.length * Math.random());
+    return aList[randomNumber];
+}
+
+console.log(
+    "random sound",
+    randomItem(clickySounds)
+);
+
+const playRandomButton = document.getElementById("play-random");
+function randomClick(params) {
+    const item = randomItem(clickySounds);
+    item.play();
+}
+playRandomButton.addEventListener("click", randomClick);
