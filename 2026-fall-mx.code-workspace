@@ -5,7 +5,7 @@
 		}
   ],
   "settings": {
-    "chat.disableAIFeatures": false,
+    "chat.disableAIFeatures": true,
     "emmet.excludeLanguages": [
       "markdown",
       "html"
