@@ -37,3 +37,33 @@ function randomClick(params) {
     item.play();
 }
 playRandomButton.addEventListener("click", randomClick);
+
+let i = 0;
+while ( i < clickySounds.length) {
+    console.log( clickySounds[i] );
+
+    let sound = clickySounds[i];
+    console.log( sound.id );
+    console.log( sound.src );
+    console.log( sound.controls );
+    sound.controls = true;
+
+    if (i === 1) {
+        console.log("Only when i = 1!");    
+    } else {
+        console.log("When i is NOT 1!");
+    }
+
+    i++;
+}
+
+const audioTags = document.querySelectorAll("audio");
+console.log("audioTags", audioTags);
+
+
+let count = 0;
+while ( count < audioTags.length ) {
+    console.log(audioTags[count]);
+    
+    count++;
+}
