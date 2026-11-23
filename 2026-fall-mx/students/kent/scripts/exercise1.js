@@ -1,7 +1,7 @@
 let alphabet = [
     "a",
     "b",
-    "c"
+    "c",
     "d",
     "e",
 ];
@@ -19,11 +19,11 @@ for (
 ) {
     console.log(i, alphabet[i]);
 }
-for (
-    let i = len - 1;
+// for (
+//     let i = len - 1;
     
- ) {
-    console.log(i, alphabet[i])
+//  ) {
+//     console.log(i, alphabet[i])
 
-}
-console.log('done');
+// }
+// console.log('done');
