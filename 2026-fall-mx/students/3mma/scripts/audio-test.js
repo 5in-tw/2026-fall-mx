@@ -37,3 +37,24 @@ function randomClick(){
     Item.play();
 }
 playRandomButton.addEventListener("click", randomClick)
+
+let i = 0;
+while ( i < clickSounds.len){
+    console.log(clickSounds[i])
+    i++;
+}
+
+let sounds = clickSounds[i];
+console.log( sounds.id );
+console.log( sounds.src );
+console.log( controls );
+sounds.controls = false;
+
+if (i === 1){
+    console.log("i = 1")
+}else{
+    console.log("not 1")
+}
+
+const audioTags = document.querySelector('aodio')
+console.log('audioTags')
