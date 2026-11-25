@@ -23,8 +23,6 @@ function randomItem(alist) {
     const randomNumber = Math.floor(alist.length *Math.random());
     return alist[randomNumber];
 }
-
-console.log(
     "random sound",
     randomItem(clickysound)
 );
