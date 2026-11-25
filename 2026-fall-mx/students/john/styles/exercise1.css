@@ -1,3 +1,38 @@
+/* Matches <button class="play"> */
+.play {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+}
+.play:active {
+  translate: 1px 1px;
+  box-shadow: none;
+}
+
+.play-circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.play-triangle {
+  display: block;
+  margin-left: 2px;
+  border-style: solid;
+  border-top-width: 10px;
+  border-top-color: transparent;
+  border-bottom-width: 10px;
+  border-bottom-color: transparent;
+  border-left-width: 20px;
+  border-left-color: white;
+  border-right-width: 0px;
+  border-right-color: transparent;
+}
+
 @keyframes five-spin {
   0% {
     rotate: 0deg;
