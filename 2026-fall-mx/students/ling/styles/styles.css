@@ -1,9 +1,118 @@
 body {
-    background-color: light-dark(rgb(166, 220, 244), rgb(2, 32, 70));
-    color: light-dark(rgb(39, 41, 42), rgb(203, 226, 255));
+    background-color: light-dark(rgb(166, 220, 244), rgb(0, 0, 0));
+    color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
 }
 
 footer {
-    background-color: light-dark(rgb(108, 206, 248), rgb(71, 89, 110));
-    color: light-dark(rgb(16, 16, 16), rgb(234, 236, 239));
+    background-color: light-dark(rgba(95, 95, 95, 0.126), rgba(255, 255, 255, 0.41));
+    color: light-dark(rgba(0, 0, 0, 0.605), rgb(234, 236, 239));
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color-chooser {
+    border: 3px solid rgb(251, 250, 250);
+
+
+    input {
+        display: none;
+
+    }
+}
+
+[type="text"] {
+    border: 6px double rgb(107, 162, 185);
+}
+
+@keyframes logo-image {
+    0% {
+        rotate: 0turn;
+    }
+
+    100% {
+        rotate: -1turn;
+    }
+}
+
+
+@keyframes logo-name {
+    0% {
+        transform: rotate(0turn) translate(70px);
+    }
+
+    100% {
+        transform: rotate(1turn) translate(70px);
+    }
+}
+
+
+
+.logo {
+    position: relative;
+
+    img {
+        animation: logo-image 10s linear infinite;
+        scale: 0.6;
+    }
+
+    b {
+        animation: logo-name 3s linear infinite;
+        position: absolute;
+        top: 31px;
+        left: 27px;
+    }
+}
+
+
+
+.circle {
+    position: absolute;
+    display: block;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgb(255, 243, 113),
+            #abdaff 90%);
+}
+
+
+h1 {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+fieldset {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
