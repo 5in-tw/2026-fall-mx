@@ -17,3 +17,4 @@ function changeColors(event) {
     setColorScheme(event.target.value);
 }
 chooser.addEventListener("change", changeColors);
+\
