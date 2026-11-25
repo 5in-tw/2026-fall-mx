@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Little Professor</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css" />
+    <link rel="stylesheet" href="./styles/little-professor.css" />
+  </head>
+  <body>
+    <div class="little-professor">
+      <div class="display">
+        <span id="try"     > Try again! </span>
+        <span id="number1" > 1 </span>
+        <span id="add"     > + </span>
+        <span id="subtract"> − </span>
+        <span id="multiply"> × </span>
+        <span id="divide"  > ÷ </span>
+        <span id="number2" > 2 </span>
+        <span id="equal"   > = </span>
+        <span id="guess"   > 3 </span>
+        <span id="wrong"   > ❌ </span>
+        <span id="answer"  > 4 </span>
+        <span id="correct" > ✅ </span>
+      </div>
+      <div class="buttons">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+
+        <button>C</button>
+        <button>0</button>
+        <button>GO</button>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <fieldset>
+        <legend>Score</legend>
+        <p>
+          <span id="score" class="sidebar-element">0</span>
+          <span id="win" class="sidebar-element">🏆</span>
+        </p>
+      </fieldset>
+
+      <div id="start-form" class="sidebar-element">
+        <fieldset>
+          <legend>Choose Math</legend>
+
+          <label>
+            <input type="radio" name="operator" value="add" checked />
+            <span class="setting">+</span> Addition
+          </label>
+
+          <label>
+            <input type="radio" name="operator" value="subtract" />
+            <span class="setting">−</span> Subtraction
+          </label>
+
+          <label>
+            <input type="radio" name="operator" value="multiply" />
+            <span class="setting">×</span> Multiplication
+          </label>
+
+          <label>
+            <input type="radio" name="operator" value="divide" />
+            <span class="setting">÷</span> Division
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose Difficulty</legend>
+
+          <label>
+            <input type="radio" name="difficulty" value="easy" />
+            <span class="setting setting-off">1</span>
+            <span class="setting setting-on">😌</span> Easy
+          </label>
+
+          <label>
+            <input type="radio" name="difficulty" value="medium" />
+            <span class="setting setting-off">2</span>
+            <span class="setting setting-on">😓</span> Medium
+          </label>
+
+          <label>
+            <input type="radio" name="difficulty" value="hard" />
+            <span class="setting setting-off">3</span>
+            <span class="setting setting-on">😭</span> Hard
+          </label>
+        </fieldset>
+
+        <button id="start-button" class="sidebar-element">START</button>
+      </div>
+
+      <div id="next-form" class="sidebar-element">
+        <fieldset>
+          <legend>Question</legend>
+          <p>
+            <span id="question" class="sidebar-element">0</span>
+            of 10
+          </p>
+        </fieldset>
+
+        <button id="next-button" disabled class="sidebar-element">NEXT</button>
+      </div>
+
+      <audio src="/2026-fall-mx/media/success.mp3" id="success"></audio>
+      <audio src="/2026-fall-mx/media/error.mp3" id="error"></audio>
+      <audio src="/2026-fall-mx/media/keypress-1.mp3"></audio>
+      <audio src="/2026-fall-mx/media/keypress-2.mp3"></audio>
+      <audio src="/2026-fall-mx/media/keypress-3.mp3"></audio>
+    </div>
+
+    <script src="./scripts/little-professor.js"></script>
+  </body>
+</html>
