@@ -50,7 +50,7 @@ sound.controls = true;
 
     (i === 1) {
         console.log("Only when i=1!");
-    }else {
+    } else {
         console.log("When i is NOT 1!");
     }
 
