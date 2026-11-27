@@ -24,3 +24,25 @@ while (i < audioElements.length) {
 }
 console.log("audio", audio);
 console.log("clickSounds", clickSounds);
+
+const allButtons = document.querySelectorAll("button");
+
+const clacButtons = document.querySelectorAll(".button button");
+
+//
+//HELPER FUNCTIONS
+//
+
+function randomTnteger(low, high) {
+    return Math.floor(low + Math.random() * (high - low + 1));
+}
+
+//
+// EVENT LITSENER
+//
+
+function playRandomClick() {
+    const randomNumber = Math.floor(clickSounds.length * Math.random());
+    const item = clickSounds[randomNumber];
+    item.play();
+}
