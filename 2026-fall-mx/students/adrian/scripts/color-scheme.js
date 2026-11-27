@@ -13,4 +13,4 @@ function changeColor(event){
     console.log(event);
     setColorScheme(event.target.value);
 }
-chooser.addEventListener("change",changeColor);
+chooser.addEventListener("change",changeColor);e

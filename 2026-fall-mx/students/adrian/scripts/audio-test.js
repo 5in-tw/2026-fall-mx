@@ -13,7 +13,7 @@ playbutton.addEventListener("click", beep);
 const click2=document .getElementById("click2");
 
 
-playbutton.addEventListener("click", beep);
+playbutton.addEventListener("click", beep);s
 const click3=document .getElementById("click3");
 
 
@@ -41,7 +41,32 @@ function randomClick(){
 }
 playRandomButton.addEventListener("click", randomClick)
 
+let i = 0;
+while ( i < clickysound.length) {
+    console.log( clickysound[i]);
+
+    let sound = clickysound[i];
+    console.log( sound.id );
+    console.log( sound.src );
+    console.log( sound.controls );
+    sound.controls = true;
+
+    if (i === 1) {
+        console.log("Only when i = 1 is NOT 1!");
+    } else {
+      console.log("When i is NOT 1!");
+    }
+
+  i++;
+}
+
+const audioTags = document.querySelectorAll("audio");
+console.log("audioTags", audioTags);
 
 
+let count = 0;
+while ( count < audioTags.length ) {
+    console.log(audioTags[count]);
 
-
+    count++;
+}
