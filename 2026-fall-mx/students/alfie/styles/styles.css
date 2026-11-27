@@ -1,13 +1,97 @@
-
 body {
-    background-color: light-dark(rgba(95, 158, 160, 0.334), cadetblue);
+    background-color: light-dark(rgb(255, 255, 255), cadetblue);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 h1 {
-    color: light-dark( red, rgb(232, 232, 255));
+    color: light-dark(red, rgb(232, 232, 255));
 }
 
 
 footer {
     background-color: light-dark(rgb(197, 216, 206), rgb(206, 206, 234));
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color-chooser {
+    border: 3px solid purple;
+
+    input {
+        display: none;
+        border: 5px solid red;
+    }
+
+    label:has(input:checked) {
+        color: rgb(255, 4, 0);
+        background-color: darksalmon;
+    }
+}
+
+[id="test"] {
+    border: 6px double purple;
+}
+
+@keyframes logo-image {
+    0% {
+        rotate: 0turn;
+    }
+
+    100% {
+        rotate: -1turn;
+    }
+}
+
+@keyframes logo-name {
+    0% {
+        transform: rotate(0turn) translate(70px);
+    }
+
+    100% {
+        transform: rotate(1turn) translate(70px);
+
+    }
+
+}
+
+.logo {
+    position: relative;
+
+
+    img {
+        animation: logo-image 10s linear infinite;
+        scale: 0.65;
+    }
+
+    b {
+        animation: logo-name 3s linear infinite;
+        position: absolute;
+        top: 31px;
+        left: 27px;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(blue, red 90%);
 }

@@ -1,58 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title></title>
+
+<head>
+    <title>HO's homepage</title>
+    <link rel="stylesheet" href="/2026-fall-mx/styles/shared.css">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="icon" href="/2026-fall-mx/favicon.png" />
     <meta name="color-scheme" content="light dark">
-  </head>
-  <body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
     <header class="header">
-      <div class="center line">
-        <div class="big line">
-          <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
-          <b>5IN</b>
+        <div class="center line">
+            <div class="big logo">
+                <span class="circle"></span>
+                <img src="/2026-fall-mx/images/logo-5in.png" alt="5in" width="80" />
+                <b>5IN</b>
+            </div>
+            <nav class="line" aria-label="website">
+                <a href="/2026-fall-mx/students/alfie/">Home</a>
+                <a href="/2026-fall-mx/students/alfie/coding.html">Coding</a>
+            </nav>
         </div>
-        <menu class="line">
-          <a href="/2026-fall-mx/students/lalisa/">Home</a>
-        </menu>
-      </div>
     </header>
     <main class="center">
-      <h1>Homepage of Alfie</h1>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30Fte7BKoQnamh0_3ELOu0e2zYDAdgqJoHRgaa5Wvpdmu46BnyK-o86fY&s=10" width="300">
-      <fieldset>
-        <legend>Color scheme</legend>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="light" />
-          Light
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="color-scheme-choice"
-            value="light dark"
-            checked
-          />
-          Auto
-        </label>
-        <label>
-          <input type="radio" name="color-scheme-choice" value="dark" />
-          Dark
-        </label>
-      </fieldset>
+        <h1 id="title">Homepage of Alfie</h1>
+        <img src="./images/unnamed (2).webp" width="400">
+        <img src="https://chat.google.com/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AJGomAZzsO07Wjd05oWaETspBMrY0Ftz2vKwuIggNNxdYVU24usd3wZs3H%2FT6D19gchOfkY%2Fj0eWE8N1GA1%2B%2BbsODM6x%2FBhafGrXzFfMdoO%2Fnby9iL%2BLBrczwgP9X3ECQIIb9rRSCfgtD91pmS3kJg%2FLZkkIvMTyKdduJBOgItI4UmwXFzG5Ubi64sT%2BSGAh5LYGR1Es4woZvbnROmadzuJQlYDKH4VykGrexwrHWP%2FjQn201uLxupRu3t0z%2FT1Nr6NCZb4u3rwRvFI5ABddjQXSPpUT4ZRnBPfJtqCkYlSN2qe%2BSugoAzLyhlvDe8gwDQeG08I3YatuxRYtCTOm5mG3jdNAsMDw73JQBuXi3usJ3KLgkMi32CwEjR7hJEMj0QihcgWkx14QUfEQCy3VcpuRIiGLJ7ffPh%2FKO69QfXsbF6xJL0y3DUQVU3oqQqVuYS%2BU6ii3080jDJl6Cg7B6zf4M%2BIh%2FBMffzbRp4LhqZfmwG%2FhpNYfbIDYoqwdHI%2F6IP5G7k3UUYepMfFbBGpOpW4v7XhncqKNjeZiRIHZVvUQRR5c59ft2iI8yfUTJBey9EoBdGs5CCZk2Pi975rpszGqXWI7FQseAo32x0FeWJxWaUkPRxCHmnatIiAK8T2oxAKg0TaWfRXTlLdjk0wDnmMaJvtIKhFgbPYxSA%3D%3D&allow_caching=true&sz=w1302-h1097-rw&auditContext=prefetch" width="400">
+
+          <form id="my-form">
+            Test:
+            <input type="password" name="test" value="yellow">
+            <br>
+            <input type="text" name="test2" value="Snoopy">
+            <br>
+            <input type="text" name="test3" value="Woodstock">
+          </form>
+    
+            <fieldset id="color-chooser">
+                <legend>Color scheme</legend>
+                <label>
+                    Test:
+                    <input type="radio" name="color-scheme-choice" value="light" />
+                    Light
+                </label>
+                <label>
+                    <input type="radio" name="color-scheme-choice" value="light dark" checked />
+                    Auto
+                </label>
+                <label>
+                    <input type="radio" name="color-scheme-choice" value="dark" />
+                    Dark
+                </label>
+            </fieldset>
+        <button id="my-button">
+            Test button
+        </button>
     </main>
     <footer class="footer">
-      <div class="center">
-        <p>Last updated: 2025 September 10</p>
-        <p>
-          Code:
-          <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
-        </p>
-      </div>
+        <div class="center">
+            <p>Last updated: 2025 September 10</p>
+            <p>
+                Code:
+                <a href="https://github.com/5in-tw/2026-fall-mixed">GitHub</a>
+            </p>
+        </div>
     </footer>
+    <script src="./scipts/color-scheme.js" type="module"></script>
+    <!-- <script src="./scipts/practice-2.js" type="module"></script> -->
 
-    <script src="./scripts/color-scheme.js" type="module"></script>
+</body>
 
-  </body>
 </html>
