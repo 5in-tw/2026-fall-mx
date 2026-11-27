@@ -1,9 +1,88 @@
 body {
-    background-color: light-dark(blue, orange);
-    color: light-dark(yellow, yellow);
+    background-color: light-dark(white, rgb(51, 51, 51));
+    color: light-dark(black, white);
 }
 
 footer {
-    background-color: light-dark(orange, aqua);
-    color: light-dark(aqua, blue);
+    background-color: light-dark(rgb(255, 170, 255), rgb(255, 85, 255));
+    color: light-dark(black, white);
+}
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#color-chooser {
+    border: 3px solid purple;
+
+    input {
+        display: none;
+    }
+
+    label:has(input:checked) {
+        color: darkgreen;
+        background-color: lightsalmon;
+    }
+}
+
+[type="text"] {
+    border: 6px double purple;
+}
+
+.logo {
+    position: relative;
+
+    img {
+        animation: logo-image 10s linear infinite;
+        scale: 0.65;
+    }
+
+    b{
+        animation: logo-name 3s linear infinite;
+        position: absolute;
+        top: 31px;
+        left: 27px;
+    }
+}
+
+@keyframes logo-image {
+    0% {
+        rotate: 0turn;
+    }
+    100% {
+        rotate: -1turn;
+    }
+}
+
+@keyframes logo-name {
+    0% {
+        transform: rotate(0turn) translate(70px);
+    }
+    100% {
+        transform: rotate(1turn) translate(70px);
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(
+        100deg,
+        lightsalmon,
+        #222 90%
+    );
 }
