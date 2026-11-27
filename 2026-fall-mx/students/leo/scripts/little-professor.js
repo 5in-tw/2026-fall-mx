@@ -23,3 +23,28 @@ clickSounds.push(audioElement);
 }
 console.log("audio", audio);
 console.log("clickSounds", clickSounds);
+
+
+const allButtons = document.querySelectorAll("button");
+const calcButtons = document.querySelectorAll(".button button");
+
+//
+// helper functions
+//
+
+function randomInteger(low, high) {
+    return Maath.floor(low + Math.random() * (high - low +1));
+}
+
+//
+//EvEnt listeners
+//
+
+function playRandomClick() {
+    const randomNumber = Math.floor(clickSounds.length * Math.random());
+    const item = clickSounds[randomNumber];
+    item.play();
+}
+calcButtons.forEach((item) => {
+    item.addEventListener("click", playRandomClick);
+});
