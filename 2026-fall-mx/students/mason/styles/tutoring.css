@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.play-circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+  background: black;
+}
+
+.play-triangle {
+  display: block;
+  border-color: white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: white;
+  border-right-color: transparent;
+  border-style: solid;
+  /*border-width: 10px;*/
+  border-left-width: 17.3px;
+  border-right-width:0px;
+  border-top-width: 10px;
+  border-bottom-width:10px;
+  margin-left: 3px;
+}
