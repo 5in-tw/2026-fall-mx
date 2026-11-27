@@ -26,4 +26,22 @@ while (i < audioElements.length) {
 console.log("audio", audio);
 console.log("clickSounds", clickSounds)
 
+const allbutton = document.querySelector("button");
 
+
+const calcbutton = document.querySelectorAll(".buttons button");
+
+
+function randomInteger(low, high) {
+    return Math.floor(low + Math.random() * (high - low + 1));
+}
+
+//
+//EVENT LISTTENERS
+//
+
+function playRandomClick() {
+    const randomNumber = Math.floor(clickSounds.length * Math.random());
+    const item = clickSounds[randomNumber];
+    item.play();
+}
