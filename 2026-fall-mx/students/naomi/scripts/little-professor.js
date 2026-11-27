@@ -15,13 +15,35 @@ while (i < audioElements.length) {
 
     if (id === "error") {
         audio.error = audioElement;
-    } else if (id === "success"){
+    } else if (id === "success") {
         audio.success = audioElement;
     } else {
         clickySounds.push(audioElement);
     }
-    
+
     i++;
 }
 console.log("audio", audio);
 console.log("clickSounds", clickySounds);
+
+const allButtons = document.querySelectorAll("button");
+
+const calcButtons = document.querySelectorAll(".buttons button")
+
+//
+// HELPER FUNCTIONS
+//
+
+function randomInteger(low, high) {
+    return Math.floor(low + Math.random() * (high - low + 1));
+}
+
+//
+// EVENT LISTENERS
+//
+
+function playRandomClick(){
+    const randomNumber = Math.floor(clickySounds.length * Math.random());
+    const item = clickSounds[randomNumber];
+    item.play();
+}
