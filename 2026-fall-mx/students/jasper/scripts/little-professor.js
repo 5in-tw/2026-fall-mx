@@ -17,9 +17,9 @@ while (i < audioElements.length) {
     const id = audioElement.id;
 
 
-    if (id === "error"){
+    if (id === "error") {
         audio.error = audioElement;
-    } else if(id === "success") {
+    } else if (id === "success") {
         audio.success = audioElement;
     } else {
         clickSounds.push(audioElement);
