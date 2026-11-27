@@ -24,3 +24,22 @@ while (i < audioElements.length) {
 }
 console.log("audio", audio);
 console.log("clickySounds", clickySounds);
+
+const allButtons  = document.querySelectorAll("button");
+
+const calcButtons = document.querySelectorAll(".button button");
+
+
+function randomInteger(low, high) {
+    return Math.floor(low + Math.random() * (high - low + 1));
+}
+
+//
+// EVENT LISTENERS
+//
+
+function playRandomClick() {
+    const randomNumber = Math.floor(clickySounds.length * Math.random());
+    const item = clickySounds[randomNumber];
+    item.play();
+}
