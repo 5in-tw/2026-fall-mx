@@ -13,7 +13,7 @@ while (i < audioElements.length) {
     const audioElement = audioElements[i];
     const id = audioElements.id;
 
-    if(id === "error") {
+    if (id === "error") {
         audio.error = audioElement;
     } else if (id === "success") {
         audio.success = audioElement;
@@ -24,3 +24,17 @@ while (i < audioElements.length) {
 }
 console.log("audio", audio);
 console.log("clickSounds", clickSounds);
+
+const allButtons = document.querySelectorAll("button");
+
+const calcButtons = document.querySelectorAll(".buttons button")
+
+function randomInteger(low, high) {
+    return Math.floor(low + Math.random() * (high - low + 1));
+}
+
+function playRandomClick() {
+    const randomNumber = Math.floor(clickSounds.length * Math.random());
+    const item = clickSounds(randomNumber);
+    item.play();
+}
